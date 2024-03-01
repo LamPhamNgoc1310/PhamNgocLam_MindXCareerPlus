@@ -1,0 +1,14 @@
+Notable Stuff:
+- You can use the attribute name and then code the variable
+respective to the top-right-bottom-left
+ + e.g: padding: 50px 40px 30px 20px
+ (when you leave 1 spot blank, it will be understood as vertical-horizontal)
+- Position:
+ + relative: change the position "relative" to the box position
+ (if you don't add postion: relative, the box will simply be "static" by default)
+ + absolute: it will be affected by the nearest "father" class with "position: absolute",
+ treat it as its box.
+ + fixed: the box will be "fixed" (lol)
+References:
+
+Fun stuff:

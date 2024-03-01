@@ -1,0 +1,39 @@
+Notable stuff:
+- Display:
+ + inline: size is the size of the content layout in on the line, cannot change its attributes in vertical axis.
+ + block: take the whole line layout as a block, attributes (top, bottom, left, right) can be changed
+ (you can even make it on the same line as an inline, block)
+ + inline-block: both inline and block (or can be understood as 
+ able-to-change-vertical-axis inline, priotize inline)
+ + flexbox: 
+   > justtify-content: used for the horizontal axe.
+   (properties: flex-start, flex-end, center; space-between, space-around,
+   space-evenly)
+   (space between, space around, space-evenly are different)
+   > flex-direction: used to change the default direction of the flexbox
+   (properties: column, row, reverse row/column)
+   > align-items: used for the vertical axe.
+   (properties: flex-start, flex-end, center, baseline?, center)
+   > align-content: modifying the spaces between the lines of the box,
+   doesn't affect the objects.
+   (properties: center, space-between, space-around, space-evenly, flex-end, flex-start)
+   > flex-basis, flex shrink: modifying the width of the element "box" according to
+   the direction of the main axis (default: horizontal)
+   (it will be priotized over the "width" property)
+   
+ + Grid: 
+   > grid-template-column/row: defining the grid length/width in a grid
+   (width of nth column/row, separated by spaces)
+   > grid-row/column-gap: gap between the rows/columns
+   > grid-row/column-start: a (n-1) number of rows/columns will be covered 
+
+Upcoming final tests:
+- A website with 5 pages 
+- 5 js implementations
+References:
+
+Fun stuff:
+- cracking pro icon on fontawesome:
+ + use the link that the instructor gave and copy the icon you want
+ <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+ + enjoy :D 

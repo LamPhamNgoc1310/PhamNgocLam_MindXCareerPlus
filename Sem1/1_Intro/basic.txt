@@ -1,0 +1,20 @@
+Notable stuff:
+- UI and UX are crucial and if you master 2 of these then you're considered a fullstack dev.
+- A website must be connected to a server
+- Front end devs build the interface of the website
+- Back end devs build the "wiring" behind front-end
+  + Backend must know about: mobile dev, devops, blockchain.
+- You'll be taught the basics of network in this course.
+- Rules:
+  + Dont come late.
+  + Read the textbook before your class.
+  + Do your homework.
+- ReactJS, VueJS, Vlete is a framework used to build a web
+
+References:
+- roadmap.sh
+- a final test in 1st sem: https://c4e138-vegan-recipe.vercel.app/cong-thuc/index.html
+
+Fun stuffs:
+- The online mentor uses Notion.
+- Phimmoi.net is a very complex yet so simple looking website (and pretty magical too).

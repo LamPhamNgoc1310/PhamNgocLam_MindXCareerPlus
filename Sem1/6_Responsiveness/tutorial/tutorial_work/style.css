@@ -1,0 +1,93 @@
+.container {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.container .select-list-tablet {
+    display: none;
+}
+.container .nav-bar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .nav-bar .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.container .nav-bar .logo {
+    display: flex;
+    align-items: center; 
+  
+}
+
+.container .nav-bar .bar-items {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    color: #191825;
+    opacity: 50%;
+}
+
+.container .nav-bar .bar-items a:hover {
+    font-weight: bold;
+    opacity: 1;
+}
+
+
+
+.container .nav-bar .nav-button .signup-button,
+.container .nav-bar .nav-button .login-button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+/* tablet */
+@media only screen and (max-width: 1024px){
+
+    .container .nav-bar .bar-items{
+        display: none;
+
+    }
+
+    .container .nav-bar .select-list-tablet{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    .container .nav-bar .select-list-tablet img {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .container .nav-bar .select-list-tablet .select-list-tablet-choices {
+        display: none;
+    }
+
+    .container .nav-bar .select-list-tablet .select-list-tablet-choices:hover{
+        display: block;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 700px){
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .nav-bar {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .nav-bar .logo {
+        display: flex;
+        justify-content: start;
+    }
+    .nav-bar .nav-button {
+        display: none;
+    }
+}

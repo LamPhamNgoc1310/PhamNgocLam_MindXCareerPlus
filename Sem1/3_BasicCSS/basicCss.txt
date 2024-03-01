@@ -1,0 +1,23 @@
+Notable stuff:
+(delayed cuz this one is quite short)
+
+- To modify the fonts to your liking, you can use the <style> tag (or attribute)
+every <html> has this attribute.
+- In line CSS refers to a "style" attribute in a tag (rarely use).
+- You need to create a .css file (external css) to ensure that the code is lookable according to
+"DRY (Don't Repeat Yourself)"
+ + Internal CSS refers to <style>
+- You can label tags with #id (for unique things) and .class (for a group of elements)
+- "flex" attribute is important (next lesson)
+- Box model: Border, width, height, margin, padding:
+ + These are the attribute of an html block.
+ + Border is the line surrounding the block.
+ + Margin does not affect the block and other blocks.
+ + Padding is an invisible border.
+- Father and children inheritance:
+ + div.[class]
+ + div.p.[class]
+References:
+
+Fun stuff:
+- You can use the steps to do homework (analysis, discussion, prepare, actions)

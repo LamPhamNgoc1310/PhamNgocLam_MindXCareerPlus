@@ -1,0 +1,39 @@
+Actually lesson 7
+
+Notable stuff:
+- Responsiveness is necessary in any website
+    so that it can adapt to multiple types of devices.
+    + Responsiveness VS adaptivness:
+        > adaptivness is faster and brings an overall better experience
+        for users, how ever it costs more time to create another app than 
+        just creating a another format for the same app (Responsiveness)
+- Media queries can be used to detect the type of device being used
+    + The unit viewheight (vh) based on the device to calculate the
+  respodning height.
+    + First way:
+    mediatype: all | screen | speech | print
+    mediafeature: the condition
+    use the below to condition:
+
+        "@media not | only mediatype and (mediafeature: value) {
+        CSS-code;
+        }"
+
+    + Breakpoints is the resolutions for common devices
+
+    + Second way: use class (cannot use until JavaScript)
+    The priority order: important > inline css > internal css > 
+    e.g: 
+        .uiMobile {
+            background-color: red;
+        }
+
+        .uiDesktop {
+            background-color: green;
+        }
+
+
+References:
+- Tailwind website can be used to search for breakpoints
+
+Fun stuff:

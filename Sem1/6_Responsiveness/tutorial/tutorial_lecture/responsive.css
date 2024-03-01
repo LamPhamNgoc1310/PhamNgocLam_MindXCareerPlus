@@ -1,0 +1,6 @@
+/* applied when >=700px
+@media only screen and (min-width: 700px){
+    .box-container {
+        background-color: blue;
+    }   
+} */

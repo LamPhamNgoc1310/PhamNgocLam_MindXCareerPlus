@@ -1,0 +1,55 @@
+Notable stuff:
+- <HTML> is the biggest tag, or the father tag.
+ + <title> is the name of the browser tab.
+ + HTML is divided into head and body tags.
+- <meta> is useful for SEO and it's a self-closing tag.
+- Some tags:
+ + Heading
+ + paragraph
+ + table
+ + list
+  * Ordered list 
+  * Unordered list
+ + image
+ + address
+ + video
+ + text
+ + audio
+ + Form
+  * Text input
+  * number input
+  * daytime maker
+ + div tag
+ + Sematic tags (not in this day)
+- Span tag take up the spaces according to the elements inside it (aka inline), 
+while paragraph tags take up the whole line (or block).
+- Formatting tags are used to format your text (b, strong, i, u, sup, sub, center...)
+- Ordered list <ol> is numbered by default, unordered list <ul> uses bullets.
+- <table> tag uses their own heading and body tags (thead & tbody).
+ + <tr> is table row tag
+ + <td> is table data tag
+- Hyperlink tag is <a> and can contain attributes
+ + "href" is a reference (or link)
+ + "target" specifies where to open the link
+  ?1: target self, blank, top, parent.
+  --> advanced stuff
+- <img> <audio> <video> tag uses "src" attribute to show the image and "alt" to replace the image if 
+the image is not functional.
+
+- A websites usually contains a lot of sections (Navigation bar, body,...)
+- Semantic tags (<header>, <footer>) function like <div> but they carries more meaning.
+ + common ones: <header> <footer> <div> <section> <...> 
+- You should use 1 <h1> only so that it's more SEO-ed
+ + you should use semantic tags according to their functionalities, 
+ or else the SEO won't be good.
+- The <section> tag is used to wrap a WHOLE section while <div> is only for small division.
+- <form> tag is used to create a form.
+ + <input> tag receives inputs from the user
+  * some attributes: 
+   > name: "name" of the choice, for choosing one only (so that it
+   acts like a checkbox).
+   > for: used to link with the label with corresponding "id="
+   (ease of access)
+References:
+- client side and server side redering 
+Fun stuff:

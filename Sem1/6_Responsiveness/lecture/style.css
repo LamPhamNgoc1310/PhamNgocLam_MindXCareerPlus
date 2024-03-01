@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.desktop-first {
+  width: 100%;
+  /* viewheight (vh) based on the device to calculate the
+  respodning height */
+  height: 100vh; 
+  background-color: bisque;
+
+}
+
+.mobile-first {
+  margin-top: 40px;
+  background-color: black;
+  height: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-first{
+    background-color: chartreuse;
+  }
+}
+/* the below code will change the background to aquamarine
+when width <= 1024px  */
+@media only screen and (max-width: 1024px) {
+  .desktop-first {
+    background-color: aquamarine;
+  }
+
+}
+
+/* the below code will change the background to aquamarine
+when width <= 768px  */
+@media only screen and (max-width: 768px) {
+  .desktop-first {
+    background-color: brown;
+    height: 100vh;
+  }
+}

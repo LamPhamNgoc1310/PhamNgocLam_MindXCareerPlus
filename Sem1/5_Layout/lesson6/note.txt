@@ -1,0 +1,9 @@
+- ý nghĩa flex box:
+    + đưa tất cả các phần tử trong flex -> follow theo 2 trục
+        + Chính -> main -> mặc định chiều ngang
+        + Phụ -> cross -> chiều dọc
+        => căn chỉnh phần tử bên trong flex -> dựa theo 2 trục
+        => ưu tiên theo trục chính trước
+    + ứng dụng: giúp căn chỉnh bố cục nhanh chóng, 
+        dễ dàng thay đổi, dễ dàng phù hợp với kích thước của viewport
+        

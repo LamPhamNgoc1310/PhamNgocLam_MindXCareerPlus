@@ -1,0 +1,19 @@
+Actual lesson: 8
+
+Notable stuff:
+- JavaScript is a high-level language and it's OOP
+    + JS is an EDP (Event-drive programming) lanuage since it requires the
+    events/ interactions of the users and execute the logical steps.
+    + The <script> tag
+    + The console.log is for printing, it can also do simple arithmetics
+        (!) You should not put the <script> tag in the header tag, because 
+        if it encounters an error, your website will be dropped and it's advisible
+        to put it at the end of the site.
+    + Variables:
+        > Use "let ..."  to initialize a variable, or "var".
+        > You cannot start a variable name with a number.
+        > Primitive Datatypes are the built-in ones, Reference Datatypes
+
+References:
+
+Fun stuff:

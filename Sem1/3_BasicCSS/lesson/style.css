@@ -1,0 +1,23 @@
+/* h1{
+    font-size: 40px;
+    color: red;
+    text-decoration: dotted;
+    font-weight: bold;
+} */
+
+ul{
+    list-style: none;
+}
+
+#logo{
+    font-size: 40px;
+    color: red;
+    text-decoration: dotted;
+    font-weight: bold;
+}
+
+.partner_item{
+    width: 40px ;
+    height: 40px;
+    
+}
