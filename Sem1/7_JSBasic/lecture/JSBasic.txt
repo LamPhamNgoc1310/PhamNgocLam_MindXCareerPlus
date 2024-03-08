@@ -13,6 +13,11 @@ Notable stuff:
         > Use "let ..."  to initialize a variable, or "var".
         > You cannot start a variable name with a number.
         > Primitive Datatypes are the built-in ones, Reference Datatypes
+- Operaions:
+    + There are also Primitive Operaions, String Operaions, Comparison Operations and 
+    Logical Operaions in JS
+    + Some other new things:
+        > "===" is used to compare the datatypes of variables
 
 References:
 
