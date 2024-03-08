@@ -1,0 +1,13 @@
+Actual lesson: 9
+Notable stuff:
+- The code block is some lines of code that are limited
+by {parentheses} (also called a block scope)
+- If you declare a variable using "const" or "let", it will be used inside
+only in a scope
+- "Switch-case" is another type of condition, it can be used in some circumstances
+- for loop and while loop are pretty much the same like in C.
+
+References:
+
+Fun stuff:
+blockly.games/maze
