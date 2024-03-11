@@ -64,16 +64,16 @@
             console.log("Counting numbers of letters in a sentence")
 
             str = "Hello, world! This is printed by console.log()"
-
+            str = str.trim();
             console.log("For loop version");
             {
-                count = 0
-                for(i = 0; i < str.length+1; i++) {
-                    if(str[i] == " " || str[i] == null){
+                count = 1;
+                for(i = 0; i < str.length; i++) {
+                    if(str[i] == " "){ //need a better method.
                         count++
                     }
                 }
-                console.log("The number of character in this sentence is: " + count);
+                console.log("The number of words in this sentence is: " + count);
             }
 
             console.log("While loop version");

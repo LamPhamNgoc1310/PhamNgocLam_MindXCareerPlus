@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tutorial Array and Object</h1>
+    <script>
+        const studentLam = {
+            name: "Pham Ngoc Lam",
+            age: 10,
+            class: "5A",
+            school: "MindX school",
+        }
+        //using method
+        console.log("Printing name by using method:",studentLam.name)
+        //using array key
+        console.log("Printing name by using array key:",studentLam["name"]);
+
+        //changing the variable
+        studentLam.name = "Lam Pham Ngoc"
+        console.log(studentLam)
+
+        //removing a variable
+        delete studentLam.name;
+        console.log(studentLam);
+
+        //Array
+        const arr = [1,2,3,4,5,6,7,8,9,10];
+        sum = 0;
+        //calculating the sum
+        for(let i = 0; i < arr.length; i++){
+            sum += arr[i];
+        }
+        
+        console.log(sum);
+        //find the largest element
+        let large = arr[0]
+        for(let i = 1; i < arr.length; i++){
+            if (large < arr[i+1]){
+                large = arr[i+1];
+            }
+        }
+        console.log(large);
+        //sort from largest to smallest
+        for(let i = 0; i < arr.length; i++){
+            if (arr[i] > arr[i+1]){
+
+            }
+        }
+        //sort from smallest to largest
+
+    </script>
+</body>
+</html>

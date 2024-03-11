@@ -1,0 +1,33 @@
+Actual lesson: 10
+
+Notable stuff:
+- Looping in js is pretty similar to C (might check out other methods
+or functions)
+- Array:
+ + Array manipulation:
+  > Indexing: arr[0] will take the first element
+  > Inputing an element: 
+   - arr.push(value): append the value to the end of the Array
+   - arr.pop(): will remove the last element
+   - arr.unshift(value): add the value to the start of the Array
+   - arr.shift(): remove the first element
+   - arr.concat(targetedArray): merge arrays together
+   - arr.slice(start, end): slice a part of the array.
+- Object:
+ + Object is a reference data type (which means it is saved in
+ a specific address in memory)
+ + Object in js is different from other OOP languages, instead
+ of delcaring a class then use that class to create objects, in JS,
+ you declare the object directly.
+ + Object is declared through keys and values
+ + To access the elements in the array, use "object.key"
+ + The for [key] in [object] loop:
+  > to access the keys, use this loop
+  > to access the values, use dynamic key, object(key)
+
+References:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
+
+Fun stuff:
+
+
