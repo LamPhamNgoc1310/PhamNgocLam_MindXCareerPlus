@@ -1,0 +1,32 @@
+
+- A music website like spotify
+- Features:
+ + Header:
+  > An unique icon.
+  > Dynamic document name.
+ + Content: 
+  > In a lofi, glitchy theme, colors: white, orange and green.
+  > Landing page
+  > Fixed vertical side bars.
+   * Left: User profile, nav bar, collection, saved
+   * Right: Artists, tours info,
+  > Matching when you arrange song in the collection
+ + Footer:
+  > A static bottom bar
+  > Footer for the page of artists.
+  > The base footer in the page of artists.
+ + 5 pages:
+  > Landing page.
+  > Main menu page
+  > Your albums page
+  > One of your album page
+  > Your profile infomation page
+ + Misc:
+  > A squishy pointer
+  > Search bar on top
+  > Bonus: 
+   * Responsive left side bar.
+
+- Templates:
+ Dark UI: https://www.figma.com/file/0QNsUBPrNenCMiQjoUXv5K/DarkUI%2FMusicPlayer-(Community)?type=design&node-id=1-2&mode=design&t=kOubfsIZi36TOp0O-0
+ Landing Page template: https://www.figma.com/community/file/1136319049007990210
