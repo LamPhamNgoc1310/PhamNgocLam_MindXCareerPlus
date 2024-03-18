@@ -24,6 +24,13 @@ Notable stuff:
 - '.innerhtml' method will write on the website
 - The local storage of the browser will store the data in key-value pairs,
 and the maximum size is 5MB.
+- Events:
+ + "addEventListener" function: execute a function when some <event> happens. 
+ + Event bubbling is another parameter for "addEventListener" function,
+ default is false (which is event bubbling)
+ + Event bubbling is the event that got execute from the inside (e.g:
+ a <div> wrapping a <p>)
+ + While event capturing is the backward.
 
 - Homework: make a 9x9 puzzle quiz with JS
 References:

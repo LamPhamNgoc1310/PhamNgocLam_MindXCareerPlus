@@ -1,0 +1,54 @@
+Notable stuff:
+- What is ES6? 
+- Arrow function is a shorter way to declare a function.
+ + Instead of declaring a whole function with "function myFunc(){}",
+ you can use const myFunc = () => {//logical codes//} myFunc()
+ + "=>" works the same as "return ..."
+ + How to declare? 
+  > 1st: const <name> = (parameters) => { //codes ... return ...}
+  function's codes and then returns sth
+  > 2nd: const <name> = (parameters) => {return sth, e.g(a-b)}
+  function returns sth immediately
+  > 3rd: const <name> = (parameters) => ({object})
+  function returns an object
+- Template literal:
+ + You can use "+" operator to concatenate multiple strings.
+ +  This is another way to concatenate.
+ Starts with a pair of single quotes (`...`) and it helps concatenate many lines
+ together. It also supports adding a variable in the string.
+- Modules: This divides your program into multiple small sections for 
+the ease of management.
+ + How? "import {function} from "<path>";
+
+- Spread and Rest operator
+ + Spread can help you interact with objects and arrays,
+ you can also make elements of a variable flat out (like this: [2,4,6,8]).
+  > you can do this by adding "..." before your variable in console.log() or any
+  declaration.
+ + Rest operator: allows you to input an infinite amount of arguments (parameters)
+ into the function delcaration.
+
+- Destructuring:
+ + Allows you to take out value of an objects more easily.
+  > before, you usually did it like this:
+    const person = {name: "MindX", age: 20}
+    const name = person.name;
+    const age = person.age;
+
+    const coordinate = [0, 1, 1];
+    const x = coordinate[0];
+    const y = coordinate[1];
+    const z = coordinate[2];
+  > now, you can do it like this:
+    const person = {name: "MindX", age: 7}
+    const {name, age} = person;
+
+    const coordinate = [0, 1, 1];
+    const [x, y, z] = coordinate;
+
+- Array functions:
+ + map function like in python.
+ + filter function
+References:
+
+Fun stuff:

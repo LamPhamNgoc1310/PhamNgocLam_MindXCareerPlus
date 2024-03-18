@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chap 12: ES6</h1>
+    <script>
+        console.log(sum(1,2));
+
+        function sum(a,b){
+            console.log('Sum of 2 numbers: ');
+            return a + b;
+        }
+        //An error will occur since there is no 'hoisting', which means the function
+        //hasn't been defined
+        // console.log(sumArrow(1,4));
+        //First way to delcare arrow func
+        const sumArrow = (a,b) => {
+            console.log('Sum of 2 numbers with arrow function:  ');
+            return a + b;
+        }
+        console.log(sumArrow(1, 4));;
+
+        // Second way to delcare arrow func
+        const sub = (a,b) => a-b;
+        console.log(sub(5,4));
+
+        const getAddress = () => (
+            {
+                name: 'MindX',
+                age: 12
+            }
+        )
+        console.log(getAddress());
+
+        const getArr = () => ([1,3,4]);
+        console.log(getArr());;
+        
+        // Template literal
+        const name = "MindX";
+        const str = "hello " + name + "!";
+        const strLiteral = `
+        hello, ${name}!
+        Welcome to our website 
+        `;
+
+        //Spread and Rest operator:
+        arr1 = [1,3,5];
+        arr2 = [2,4,6];
+        console.log("arr 1 before change:", ...arr1);
+        arr3 = arr1;
+        arr3.push(7);
+        console.log("arr 3 has elements of arr1:", ...arr3);
+        console.log("arr 1 after pushing 7 in arr3:", ...arr1);
+
+        //Destructuring
+        const person = {name1: "MindX", age1: 7}
+        const {name1: newName, age1: newAge} = person;
+        console.log(newName, newAge);
+
+        const coordinate = [0, 1, 1, 2, 3, 4];
+        const [x, y, z] = coordinate;
+        console.log(x,y,z);
+
+        //Array Functions: 
+
+        // map function
+        const numbers = [0,1,1,6,7];
+
+        let newNums = numbers.map(num => {
+            return num * 2;
+        })
+
+        console.log("map() function:",numbers, newNums);
+
+        // filter function:
+        newNums = numbers.filter(num => num%2 ===0)
+        console.log("filter() function:",numbers, newNums);
+
+        // reduce function:
+        const totalArr = numbers.reduce((currentTotal, num) => {
+            console.log("The currentTotal: ", currentTotal);
+            console.log("The num: ", num);
+            return currentTotal + num;
+        }, 0);
+        console.log(totalArr);
+    </script>
+</body>
+</html>

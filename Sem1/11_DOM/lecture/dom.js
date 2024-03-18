@@ -71,3 +71,24 @@ const timezoneElement = document.createElement('h2');
 timezoneElement.innerHTML = timezone;
 
 footerNode.appendChild(timezoneElement);
+
+
+const countTime = document.getElementById('count-time');
+let min = 0;
+let sec = 0;
+
+const formatTimer = (num) => {
+    if (num < 10) {
+        return '0' + num;
+    }
+    return num
+}
+
+// setInterval(function(){
+//     sec = sec + 1;
+//     if (sec >= 60) {
+//         sec = 0;
+//         min = min + 1;
+//     }
+// }
+// countTime.innerHTML = formatTimer(min) + ' : ' + formatTimer(sec));
