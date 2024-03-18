@@ -1,0 +1,16 @@
+Notable Stuff:
+- A function does something when called out
+ + Structure: 
+ "function [name] (parameters1,parameters2,...){}"
+- The function containing the code can also be called 
+a scope.
+- A function can receive a parameter and use that parameter 
+domestically.
+ + You can delcare a function like a variable 
+ (e.g: const myFunc = function(a,b){})
+- Type of scopes:
+ + global scope
+
+References:
+
+Fun Stuff:

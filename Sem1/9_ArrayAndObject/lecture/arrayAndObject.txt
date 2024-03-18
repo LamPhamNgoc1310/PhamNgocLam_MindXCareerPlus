@@ -24,7 +24,10 @@ or functions)
  + The for [key] in [object] loop:
   > to access the keys, use this loop
   > to access the values, use dynamic key, object(key)
-
+- Referencing in arrays: 
+ + Array in JavaScript is an OBJECT if you make the "=" operation between 2 arrays, then what are "equal" is
+ their addresses (which are the same), so whenever the data in 1 arrays get
+ some changes, the data in the second one will also change.
 References:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol
 

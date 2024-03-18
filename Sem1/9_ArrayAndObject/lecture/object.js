@@ -15,3 +15,17 @@ for (let objectKey in product){
     console.log("Values: " + objectValue);
 }
 console.log("Infomation: " + product.title)
+
+
+// REFERENCING
+const studentAlice = {
+    name: 'Alice',
+    age: 20,
+};
+//studentBob's name is still Alice since it's cloned from studentAlice
+const studentBob = studentAlice;
+
+console.log("Alice info: " + studentAlice);
+console.log('Bob info '+ studentBob);
+
+studentBob.name = 'Bob';

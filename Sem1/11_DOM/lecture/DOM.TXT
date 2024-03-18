@@ -1,0 +1,31 @@
+Notable stuff:
+- DOM is the structure of the objects and elements.
+- The DOM 'document' are:
+ + selector is similar to css selector 
+  > 'document.querySelector': return the FIRST element satisfying the selector
+  > 'document.querySelectorAll': return all elements satisfying the selector in the
+  form of a list.
+  > 'document.getElementsByTagName', 'document.getElementsById': return elements
+  with the designated class name or Id
+  > some common attributes:
+   * innerhtml
+   * innerText
+   * style
+   * classList
+   * Id
+  > some common methods:
+   * event: listen to the event of the object:
+    - 
+- THE CRUD SEQUENCE:
+ CREATE
+ READ
+ UPDATE
+ DELETE
+- '.innerhtml' method will write on the website
+- The local storage of the browser will store the data in key-value pairs,
+and the maximum size is 5MB.
+
+- Homework: make a 9x9 puzzle quiz with JS
+References:
+
+Fun stuff: 
