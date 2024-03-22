@@ -26,7 +26,16 @@
   > Search bar on top
   > Bonus: 
    * Responsive left side bar.
-
+- 5 features:
+ + Search
+ + Filtering
+ + auto create a page for a specific song/artist.
+ + play something on the player
 - Templates:
+ landing page: 
+  https://www.warframe.com/landing 
+  https://dribbble.com/shots/18408069-Spotify-landing-page-clone 
+ spotify: https://www.figma.com/community/file/1322574957601701805/spotify-ui-design 
+ spotify-like: https://www.figma.com/community/file/1345701218764275742/music-player-design-daily-ui-design-challenge-day-09 
  Dark UI: https://www.figma.com/file/0QNsUBPrNenCMiQjoUXv5K/DarkUI%2FMusicPlayer-(Community)?type=design&node-id=1-2&mode=design&t=kOubfsIZi36TOp0O-0
- Landing Page template: https://www.figma.com/community/file/1136319049007990210
+ Landing Page template: https://www.figmxa.com/community/file/1136319049007990210

@@ -1,0 +1,122 @@
+/* must be asked */
+/* *{
+    background-color: orange;
+} */
+body {
+    background-image: url(./assets/landing-cat-bg.gif);
+}
+/* FIRST CONTAINER */
+/* .container {
+    position: absolute;
+    z-index: -10px;
+} */
+.nav-bar {
+    display: flex;
+    gap: 600px;
+    background-color: black;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mukta Malar';
+    font-size: large;
+}
+
+
+.nav-bar .logo .clickable{
+    display: flex;
+    width: 40%;
+    height: 32%;
+    color: aliceblue;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.logo .clickable img{
+    width: 30%;
+}
+
+.nav-bar .navigation {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    gap: 40px;
+    font-weight: 500;
+}
+
+.nav-bar .navigation a {
+    width: max-content;
+    text-decoration: none;
+    color: aliceblue;
+    border-bottom: 3px solid;
+    border-color: black;
+    transition: 0.8s;
+}
+
+.nav-bar .navigation a:hover {
+    border-color: aliceblue;
+
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Zhi Mang Xing';
+    font-size: 80px;
+    color: aliceblue;
+}
+
+.banner .landing-button .join-now {
+    text-decoration: none;
+    font-family: 'Zhi Mang Xing';
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    font-size: 50px;
+    border-radius: 30px;
+    padding: 15px 32px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner .landing-button .join-now:hover {
+    background-color: #E36588;
+}
+
+/* SECOND CONTAINER */
+.container2{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-size: 70px
+}
+.container2 h2{
+    font-family: 'Zhi Mang Xing';
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    color: aliceblue;
+}
+
+.container2 .references {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container2 .references img{
+    width: 200px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.credit {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
