@@ -49,6 +49,14 @@ the ease of management.
 - Array functions:
  + map function like in python.
  + filter function
+- Reduce method:
+ + 
+
 References:
 
 Fun stuff:
+- How to do the project properly.
+ + Do the project from the big ones to the small ones.
+Questions:
+- What is hoisting?
+- What is reduce method

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pham Ngoc Lam - Sem 1 Mini Test: Bau Cua</title>
+    <link rel="stylesheet" href="BauCua.css">
+    <link rel="stylesheet" href="BauCua.js">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Random -->
+        <div class="random">
+            <div class="random-img">
+                <div class="random-item">
+                    <img src="./assets/bau.png" alt="" class="myImg">
+                </div>
+
+                <div class="random-item">
+                    <img src="./assets/bau.png" alt="">
+                </div>
+
+                <div class="random-item">
+                    <img src="./assets/bau.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Random Shuffle -->
+        <div class="random-btn">
+            <button class="btn-random" onclick="Shuffle">Quay</button>
+        </div>
+        
+        <!-- Choices -->
+        <div class="choices">
+            <div id="bau" class="choice-item">
+                <img src="./assets/bau.png" alt="">
+                <span class="number">0</span>
+            </div>
+
+            <div id="cua" class="choice-item">
+                <img src="./assets/cua.png" alt="">
+                <span class="number">0</span>
+            </div>
+
+            <div id="tom" class="choice-item">
+                <img src="./assets/tom.png" alt="">
+                <span class="number">0</span>
+            </div>
+
+            <div id="ca" class="choice-item">
+                <img src="./assets/ca.png" alt="">
+                <span class="number">0</span>
+            </div>
+
+            <div id="huou" class="choice-item">
+                <img src="./assets/huou.png" alt="">
+                <span class="number">0</span>
+            </div>
+
+            <div id="ga" class="choice-item">
+                <img src="./assets/ga.png" alt="">
+                <span class="number">0</span>
+            </div>
+        </div>
+        <!-- Warning for users -->
+        <div class="warning">
+            <div class="paragraph">
+
+                <p>Lưu ý:</p>
+                <p>- Số lần đặt ở mỗi 'Hình' sẽ là số lần xuất hiện của các 'Hình' trên
+                    'Kết quả'
+                </p>
+                <p>- Tổng số lần đặt tối đa là 3</p>
+
+            </div>
+            <!-- Reset button -->
+            <div class="reset-btn">
+                <button class="btn-reset">Đặt lại</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

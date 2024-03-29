@@ -1,27 +1,333 @@
-/* THE WHOLE PAGE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta Malar';
+    overflow: hidden;
+}
+body {
+    background-image: url(./assets/menu-bg.png);
+}
+
+/* NAV BAR */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.nav-bar a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+
+
+/* THE WHOLE MAIN PAGE */
 .container0 {
     display: flex;
+    gap: 0;
+    top: 0;
     flex-direction: row;
 }
 /* LEFT */
 .container1 {
-    /* position: absolute; */
+    position: relative;
     width: 20%;
-    height: 1080px;
+    height: 100vh;
     background-color: aqua;
+    gap: 20px;
+    overflow-y: scroll;
+    scrollbar-color: grey black;
+    border-style: solid;
+    border-radius: 5px;
 }
 
+
+/* LEFT CONTENT */
+.collection {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    background-color: rgb(18,18,18);
+}
+.collection-header {
+    position: fixed;
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding-right: 3px;
+    padding-left: 90px;
+    gap: 10px;
+    /* z-index: 1; */
+}
+.collection-header img{
+    width: 30px;
+    height: 30px;
+    border: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.collection-header img:hover{
+    border-color: aliceblue;
+    cursor: pointer;
+}
+
+.collection-items {
+    padding-left: 28px;
+    padding-top: 35px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.item {
+    overflow: hidden;
+    width: 100px;
+    height: 150px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.item:hover {
+    background-color: rgb(77, 77, 77);
+}
+
+.item img {
+    width: 95px;
+    height: 100px;
+    border-style: solid;
+    border: 1px;
+    border-radius: 5px;
+}
+
+
+
 /* MID */
-.container2 {
-    width: 50%;
-    height: 2000px;
+.contentMain{
+    flex: 1;
+    overflow-y: scroll;
+    max-height: 100vh;
     background-color: aquamarine;
+    overflow-y: scroll;
+    scrollbar-color: grey black;
+}
+.container2 {
+    top: 0;
+    height: 150vh;
+    border-style: solid;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.playlist img {
+    width: 150px;
+    height: 150px;
+    border: 0px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.playlist .privacy {
+    
 }
 
 /* RIGHT */
 .container3{
-    /* position: absolute; */
-    width: 30%;
-    height: 1080px;
-    background-color: blue;
+    /* position: fixed; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+    overflow-y: scroll;
+    scrollbar-color: grey black;
+    gap: 10px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+
+.artist-info {
+    width: 250px;
+    height: 280px;
+    padding-bottom: 10px;
+}
+
+.artist-info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 1px;
+    border-style: solid;
+    box-shadow: 3px;
+    border-color: black;
+    border-radius: 5px;
+    color: aliceblue;
+    background-color: rgb(77, 77, 77);
+}
+
+.artist-info .artist-name {
+    padding-bottom: 10px;
+}
+
+.artist-info h4, .artist-info button,
+ .artist-info span, .artist-info p {
+    margin-left: 12px;
+}
+
+.artist-info button {
+    text-align: center;
+    width: 50px;
+    color: aliceblue;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: rgb(77, 77, 77);
+    transition: 0.5s;
+}
+
+.artist-info button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
+.tours-info {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+}
+
+.tours-info h4 {
+    padding-left: 12px;
+    color: aliceblue;
+    background-color: rgb(77, 77, 77);
+}
+
+.tours {
+    color: aliceblue;
+    background-color: rgb(77, 77, 77);
+}
+.tour-item {
+    border-color:transparent;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 246px;
+    gap: 10px;
+}
+
+.tour-item:hover {
+    background-color: rgb(146, 146, 146);
+}
+
+.date {
+    background-color: rgb(53, 50, 50);
+    color: aliceblue;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+}
+
+.tour-info {
+
+    width: 160px;
+}
+
+.artist-info .monthlyAndFollow {
+    flex-direction: row;
+}
+.artist-pic {
+    overflow: hidden;
+}
+.artist-info .artist-pic img {
+    width: 250px;
+    height: 250px;
+}
+
+/* MUSIC PLAYER */
+.music-player {
+    left:0;
+    right: 0;
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    bottom: 0;
+    width: 100vw;
+    height: 15%;
+    background-color: black;
+    color:aliceblue;
+}
+
+.song {
+    width: 20%;
+    margin-top: 2.5%;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.song-img img{
+    border-color: aliceblue;
+    border-style: solid;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.song .song-info{
+    display: flex;
+    flex-direction: column;
+
+}
+.song .song-info a{
+    color: aliceblue;
+    text-decoration: none;
+    width: max-content;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 0;
+}
+
+.player {
+    gap: 30px;
+    margin-top: 35px;
+    margin-left: 300px;
+    display: flex;
+}
+
+.music-player .player img{
+    width: 44px;
+    height: 44px;
 }

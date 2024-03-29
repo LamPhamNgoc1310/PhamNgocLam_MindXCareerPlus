@@ -1,0 +1,19 @@
+Notable stuff:
+- Hoisting means to bring something to the top.
+ "Hoisting" in web dev doesn't with "let" and "const", if you use
+ these 2 keywords they will only be used where they are declare.
+ While for "var", hoisting works
+- String formatting can be done with '${}' sign
+- CDN link of Bootstrap.
+ + this is a link containing the css attributes (that you
+ have to link in your html file)
+ + this an external library that builds for you all the necessities for an html file.
+ + there are keywords that you add in the "class" attribute for these boostraps
+ to work.
+  > e.g: "btn" to automatically style your button
+  "mb" to automatically adjust your margin-bottom attribute.
+- Tailwindcss is another better and faster than Boostrap library.
+
+References:
+
+Fun stuff
