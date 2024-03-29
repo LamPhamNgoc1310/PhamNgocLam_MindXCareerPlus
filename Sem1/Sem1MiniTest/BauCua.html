@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pham Ngoc Lam - Sem 1 Mini Test: Bau Cua</title>
     <link rel="stylesheet" href="BauCua.css">
-    <link rel="stylesheet" href="BauCua.js">
+    
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </head>
 
 <body>
@@ -18,23 +16,23 @@
         <div class="random">
             <div class="random-img">
                 <div class="random-item">
-                    <img src="./assets/bau.png" alt="" class="myImg">
+                    <img id="Img1" src="./assets/bau.png" alt="">
                 </div>
 
                 <div class="random-item">
-                    <img src="./assets/bau.png" alt="">
+                    <img id="Img2" src="./assets/bau.png" alt="">
                 </div>
 
                 <div class="random-item">
-                    <img src="./assets/bau.png" alt="">
+                    <img id="Img3" src="./assets/bau.png" alt="">
                 </div>
             </div>
         </div>
         <!-- Random Shuffle -->
         <div class="random-btn">
-            <button class="btn-random" onclick="Shuffle">Quay</button>
+            <button class="btn-random" onclick="ShuffleInterval()">Quay</button>
         </div>
-        
+
         <!-- Choices -->
         <div class="choices">
             <div id="bau" class="choice-item">
@@ -84,6 +82,8 @@
             </div>
         </div>
     </div>
+
+    <script src="BauCua.js"></script>
 </body>
 
 </html>
