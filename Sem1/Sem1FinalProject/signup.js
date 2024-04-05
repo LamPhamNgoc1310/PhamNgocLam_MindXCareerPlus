@@ -1,7 +1,7 @@
 let form = document.getElementById("form");
 let username = document.getElementById("username");
 let password = document.getElementById("password");
-let password2 = document.getElementById("password2");
+let password2 = document.getElementById("psw");
 let btn = document.getElementById("btn");
 
 form.addEventListener("submit", (e) => {
@@ -48,7 +48,7 @@ function validation() {
     if (pass1 === "") {
         setError(password, "Password is required");
     } else if (!passFormat(pass1)) {
-        setError(password, "Password must be a minimum of 8 characters including number, Upper, Lower And one special character");
+        setError(password, "Password must be a minimum of 8 characters.");
     } else {
         setSuccess(password);
     }

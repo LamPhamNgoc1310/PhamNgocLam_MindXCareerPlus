@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta Malar';
+}
+
+body {
+    background: rgb(64, 98, 69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: pink;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.nav-bar .clickable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+}
+
+.nav-bar .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: x-large;
+    border-bottom: 3px solid transparent;
+    transition: 0.8s;
+}
+
+.nav-bar a:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+.nav-bar .clickable img{
+    width: 40px ;    
+    height: 40px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(64, 98, 69);
+}
+
+
+.player {
+    width: 350px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(24, 53, 29, 0.08);
+    box-shadow: 0 40px 100px rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    overflow: hidden;
+    color: bisque;
+
+}
+
+.song-name,
+.song-artist {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.song-name {
+    font-size: 40px;
+}
+
+.song-artist {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.song-img {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-image: url(./assets/songs/mat-tich.jpeg);
+    background-size: cover;
+}
+
+.song-slider {
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar {
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.current-time,
+.song-time {
+    font-size: 15px;
+}
+
+.song-time {
+    position: absolute;
+    right: 0;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.play-button {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url(./assets/songs/media-pause.png);
+    background-size: cover;
+    cursor: pointer;
+    border: none;
+}
+
+.prev,
+.next {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.prev img {
+    width: 40px;
+    height: 40px;
+    padding-right: 5px;
+}
+
+.next img {
+    width: 40px;
+    height: 40px;
+}

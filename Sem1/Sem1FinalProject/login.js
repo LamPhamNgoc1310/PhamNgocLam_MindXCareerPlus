@@ -11,7 +11,7 @@ form.addEventListener('submit', (e) => {
 
     if(authenticated) {
         alert("Authentication successful!");
-        window.location.href = "menu.html";
+        window.location.href = "menu2.html";
     }
     else {
         alert("Wrong Credentials");
@@ -19,9 +19,11 @@ form.addEventListener('submit', (e) => {
 
 })
 
+let storageUsername = localStorage.getItem('Username');
+let storagePassword = localStorage.getItem('Password');
 
 function authentication(username, password) {
-    if(username === "admin" && password === "password"){
+    if(username === storageUsername && password === storagePassword){
         return true;
     }
     else {

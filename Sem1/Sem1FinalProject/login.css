@@ -8,13 +8,50 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+
+    align-items: center;
     font-family: 'Mukta Malar';
     height: 100vh;
     /* background-image: linear-gradient(#62d34c, #071d0b); */
     background-image: url(./assets/login/login-bg-original.jpg);
     background-size: cover;
     filter: blur();
+}
+
+.nav-bar {
+    height: 50px;
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: pink;
+    border-radius: 20px;
+}
+
+.nav-bar .clickable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;  
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: x-large;
+    border-bottom: 3px solid transparent;
+    transition: 0.8s;
+}
+
+.nav-bar a:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+.nav-bar .clickable img{
+    width: 40px ;    
+    height: 40px;
 }
 
 .container {

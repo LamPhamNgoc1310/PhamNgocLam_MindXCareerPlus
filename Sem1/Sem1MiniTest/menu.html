@@ -36,59 +36,11 @@
         <div class="container1">
             <div class="collection-header">
                 <h3>Collection</h3>
-                <img src="./assets/plus-icon.png" alt="">
+                <img onclick="createItem()" src="./assets/plus-icon.png" alt="">
             </div>
             <div class="collection">
                 <div class="collection-items">
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
-                        <img src="./assets/songs/nlnd.jpeg" alt="">
-                        <h6 class="title">Instrumental</h6>
-                    </div>
-                    <div class="item">
+                    <div class="item" id="item">
                         <img src="./assets/songs/nlnd.jpeg" alt="">
                         <h6 class="title">Instrumental</h6>
                     </div>
@@ -217,12 +169,12 @@
         <div class="player">
             <div class="player-symbols">
                 <audio id="player-song" src="./assets/songs-audio/mat-tich.mp3"></audio>
-                <button onclick="document.getElementById('player-song').volume += 0.1"><img src="./assets/songs/media-volume-down.png" alt=""></button>
+                <button onclick="document.getElementById('player-song').volume -= 0.1"><img src="./assets/songs/media-volume-down.png" alt=""></button>
                 <button onclick="document.getElementById('player-song').play()"><img src="./assets/songs/media-play.png"
-                        alt=""></button>
-                <button onclick="document.getElementById('player-song').pause()"><img
+                    alt=""></button>
+                    <button onclick="document.getElementById('player-song').pause()"><img
                         src="./assets/songs/media-pause.png" alt=""></button>
-                <button onclick="document.getElementById('player-song').volume -= 0.1"><img src="./assets/songs/media-volume-up.png" alt=""></button>
+                        <button onclick="document.getElementById('player-song').volume += 0.1"><img src="./assets/songs/media-volume-up.png" alt=""></button>
             </div>
         </div>
 
@@ -230,7 +182,7 @@
 
         </div>
     </div>
-
+    <script src="menu.js"></script>
 </body>
 
 </html>

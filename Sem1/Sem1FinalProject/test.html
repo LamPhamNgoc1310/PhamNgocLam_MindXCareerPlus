@@ -8,23 +8,22 @@
 </head>
 
 <body>
-
-    <div class="player">
-        <audio id="player-song" src="./assets/songs-audio/mat-tich.mp3"></audio>
-        <div>
-            <button onclick="document.getElementById('player-song').play()"><img src="./assets/songs/media-play.png" alt=""></button>
-            <button onclick="document.getElementById('player-song').pause()"><img src="./assets/songs/media-pause.png" alt=""></button>
-            <button onclick="document.getElementById('player-song').volume += 0.1">Vol +</button>
-            <button onclick="document.getElementById('player-song').volume -= 0.1">Vol -</button>
-        </div>
-    </div>
+    <div id="foo">hello world!</div>
+    <img src="zoom.png" onclick="myFunction()" />
 
     <style>
-        img {
-            width: 40px;
-            height: 40px;
+        .style1 {
+            background-color: red;
+            color: white;
+            font-size: 44px;
         }
     </style>
+
+    <script>
+        function myFunction() {
+            document.getElementById('foo').setAttribute("class", "style1");
+        }
+    </script>
 </body>
 
 </html>

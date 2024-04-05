@@ -35,9 +35,9 @@ body {
 /* LEFT */
 .container1 {
     position: relative;
-    width: 20%;
-    height: 100vh;
-    background-color: aqua;
+    width: 280px;
+    height: 80vh;
+    background-color: rgb(18,18,18);
     gap: 20px;
     overflow-y: scroll;
     scrollbar-color: grey black;
@@ -57,10 +57,10 @@ body {
 .collection-header {
     position: fixed;
     display: flex;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     text-align: center;
-    padding-right: 3px;
+    padding-right: 50px;
     padding-left: 90px;
     gap: 10px;
     /* z-index: 1; */
