@@ -93,7 +93,8 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    font-size: 70px
+    font-size: 70px;
+    margin-top: 20vh;
 }
 .container2 h2{
     font-family: 'Zhi Mang Xing';

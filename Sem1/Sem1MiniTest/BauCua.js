@@ -67,7 +67,7 @@ function increasePoint(element){
     // Find the specific "number" element within the clicked element
     let numberElement = element.querySelector(".number");
     // Increment the number displayed next to the clicked image
-    let currentNumber = parseInt(numberElement.textContent, 10);
+    let currentNumber = parseInt(numberElement.textContent);
     numberElement.textContent = currentNumber + 1;
     // Update the base variable
     base = currentNumber + 1;

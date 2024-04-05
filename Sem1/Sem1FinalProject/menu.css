@@ -120,16 +120,18 @@ body {
     flex: 1;
     overflow-y: scroll;
     max-height: 100vh;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-color: black;
     overflow-y: scroll;
     scrollbar-color: grey black;
 }
 .container2 {
-    top: 0;
+    color: aliceblue;
     height: 150vh;
-    border-style: solid;
+    border: 1px solid transparent;
     border-radius: 5px;
-    margin-left: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .playlist {
@@ -137,7 +139,6 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
 }
 
 .playlist img {
@@ -149,10 +150,47 @@ body {
     border-color: transparent;
 }
 
-.playlist .privacy {
-    
+.playlist .playlist-name {
+    font-weight: bolder;
+    font-size: 50px;
+}
+.playlist .quantity {
+    font-weight: bold;
 }
 
+.playlist-order img {
+    width: 20px;
+}
+.playlist-order {
+    display: flex;
+    align-items: center;
+} 
+
+/* SONGS TABLE */
+table {
+    width: 100%
+}
+table, th, td {
+    color: grey;
+    border: 0px solid aliceblue;
+    border-collapse: collapse;
+    text-align: center;
+}
+.songs-table .header-row th{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.songs-table a {
+    text-decoration: none;
+    color: grey;
+    cursor: pointer;
+}
+.songs-table a:hover {
+    color: aliceblue;
+}
+
+footer {
+    color: grey;
+}
 /* RIGHT */
 .container3{
     /* position: fixed; */
@@ -321,13 +359,17 @@ body {
 }
 
 .player {
-    gap: 30px;
-    margin-top: 35px;
-    margin-left: 300px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+margin-left: 250px;
 }
 
-.music-player .player img{
-    width: 44px;
-    height: 44px;
+.player .player-symbols button {
+    border: none;
+    padding: 10px 10px;
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
 }
+

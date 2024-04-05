@@ -1,0 +1,98 @@
+* {
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Mukta Malar';
+    height: 100vh;
+    /* background-image: linear-gradient(#62d34c, #071d0b); */
+    background-image: url(./assets/login/login-bg-original.jpg);
+    background-size: cover;
+    filter: blur();
+}
+
+.container {
+    margin-top: 25vh;
+    width: 350px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: aliceblue;
+    padding: 5px;
+    /* justify-content: center; */
+}
+
+
+
+.logo {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 5px;
+    padding-left: 20px;
+    margin-right: 25px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.information {
+    font-size: 15px;
+    font-weight: lighter;
+    border: none;
+    border-bottom: black solid;
+    border-radius: 3px;
+}
+
+.login-button {
+    margin-top: 10px;
+    background-color: grey;
+    font-weight: bolder;
+    border-radius: 10px;
+    border-color: aliceblue;
+    background-color: aliceblue;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: green;
+    color:aliceblue;
+}
+
+.signup-redirect {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+
+

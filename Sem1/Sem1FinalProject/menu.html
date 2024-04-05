@@ -28,7 +28,7 @@
 <body>
     <!-- Nav Bar -->
     <div class="nav-bar">
-        <a href="">Home</a>
+        <a href="./landingPage.html">Home</a>
         <a href="">Search</a>
     </div>
     <div class="container0">
@@ -102,9 +102,9 @@
                 <div class="playlist">
                     <img src="./assets/songs/liked.jpg" alt="">
                     <div class="playlist-info">
-                        <p class="privacy">Private Playlist</p>
-                        <p>Liked songs</h2>
-                        <p class="description">Songs you've liked</p>
+                        <p class="playlist-privacy">Private Playlist</p>
+                        <span class="playlist-name">Liked songs</span>
+                        <p class="playlist-description">Songs you've liked</p>
                         <div class="quantity">
                             <span>User • </span>
                             <span id="songs-number">62</span>
@@ -113,17 +113,39 @@
                         </div>
                     </div>
                 </div>
+                <br>
                 <div class="playlist-songs">
                     <div class="playlist-nav-bar">
-
+                        <div class="playlist-order">
+                            <img src="./assets/songs/icons8-list-30.png" alt="">
+                            <span>Order</span>
+                        </div>
                     </div>
+                    <hr>
                     <div class="songs-table">
-
+                        <table>
+                            <!-- Table Header -->
+                            <div class="header-row">
+                                <th class="table-num">#</th>
+                                <th>Title</th>
+                                <th>Artist</th>
+                                <th>Date Added</th>
+                                <th>Duration</th>
+                            </div>
+                            <!-- Table data -->
+                            <tr class="item-row">
+                                <td class="table-num">1</td>
+                                <td>Mất tích</td>
+                                <td><a href="">Ngọt</a></td>
+                                <td>30 Mar 2024</td>
+                                <td>4:31</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-
+                <br>
                 <footer>
-
+                    <p>© This is copyright claimed by someone</p>
                 </footer>
             </div>
         </div>
@@ -175,7 +197,7 @@
                             <p class="show-name">Polyphia</p>
                             <p class="time">Sat 11:00AM</p>
                         </div>
-                    </div>          
+                    </div>
                 </div>
             </div>
         </div>
@@ -193,11 +215,14 @@
         </div>
 
         <div class="player">
-            <img src="./assets/songs/prev.png" alt="">
-            <img src="./assets/songs/play.png" alt="">
-            <img src="./assets/songs/next.png" alt="">
-            <div class="duration">
-
+            <div class="player-symbols">
+                <audio id="player-song" src="./assets/songs-audio/mat-tich.mp3"></audio>
+                <button onclick="document.getElementById('player-song').volume += 0.1"><img src="./assets/songs/media-volume-down.png" alt=""></button>
+                <button onclick="document.getElementById('player-song').play()"><img src="./assets/songs/media-play.png"
+                        alt=""></button>
+                <button onclick="document.getElementById('player-song').pause()"><img
+                        src="./assets/songs/media-pause.png" alt=""></button>
+                <button onclick="document.getElementById('player-song').volume -= 0.1"><img src="./assets/songs/media-volume-up.png" alt=""></button>
             </div>
         </div>
 
@@ -205,6 +230,7 @@
 
         </div>
     </div>
+
 </body>
 
 </html>

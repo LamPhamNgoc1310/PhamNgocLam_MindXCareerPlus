@@ -8,32 +8,21 @@
 </head>
 
 <body>
-    <div id="container">
-        <div id="navi">a</div>
-        <div id="infoi">
-            <img src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.png" height="20"
-                width="32" />b
+
+    <div class="player">
+        <audio id="player-song" src="./assets/songs-audio/mat-tich.mp3"></audio>
+        <div>
+            <button onclick="document.getElementById('player-song').play()"><img src="./assets/songs/media-play.png" alt=""></button>
+            <button onclick="document.getElementById('player-song').pause()"><img src="./assets/songs/media-pause.png" alt=""></button>
+            <button onclick="document.getElementById('player-song').volume += 0.1">Vol +</button>
+            <button onclick="document.getElementById('player-song').volume -= 0.1">Vol -</button>
         </div>
     </div>
 
     <style>
-        #container {
-            width: 100px;
-            height: 100px;
-            position: relative;
-        }
-
-        #navi,
-        #infoi {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        #infoi {
-            z-index: 10;
+        img {
+            width: 40px;
+            height: 40px;
         }
     </style>
 </body>
