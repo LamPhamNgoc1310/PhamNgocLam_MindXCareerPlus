@@ -1,0 +1,5 @@
+Feedback:
+- Khá ấn tượng về mặt thẩm mĩ (giống ứng dụng blockchain)
+- Phần nghe nhạc có thể thêm phần sóng lên xuống.
+- Thêm mèo chạy bên dưới footer
+- Thêm playlist
