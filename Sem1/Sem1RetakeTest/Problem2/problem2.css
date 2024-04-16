@@ -1,0 +1,28 @@
+/* body {
+    background: #000;
+} */
+
+.container {
+    width: 90vw;
+    height: 90vh;
+    background-color: gray;
+    border-radius: 10px;
+    border: 10px;
+    border-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+.colors .color-display {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 0);
+}
+
+.colors .color-picker {
+    width: 200px;
+    height: 100px;
+    background-image: linear-gradient(to left, yellow, black);
+}
+
+
