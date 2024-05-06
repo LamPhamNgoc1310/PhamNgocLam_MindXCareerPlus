@@ -1,0 +1,28 @@
+Notable stuff:
+REST & SPREAD Operators:
+- Spread means to lay out all the elements of an array or an object 
+ (note that for objects, elements will be laid out in "key:value" format)
+ Syntax: ...(variable)
+
+- Rest means to create a function with an infinite amount of parameters
+
+DESTRUCTURING
+- To access and map values of an array or an object to an array or an object.
+
+DATA TYPES
+- Primitive: gets compared by values when made to be compared
+- References: 
+ + Saved on address of memory slot
+ + Compared by addresses
+ + the addresses are NEVER the same
+ + object or array.
+
+ e.g: [1,2] === [1,2] => false (diff in addresses.)
+? What if you want to compare the values instead?
+- You will have to use JSON.stringyfy() to convert the arrays above to strings and then compare them.
+
+- map() method is used to map values and copy them a new array 
+- filter() method is like an if statement that filter the values with specific conditions.
+References:
+
+Fun stuff:

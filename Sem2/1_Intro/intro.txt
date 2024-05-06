@@ -1,0 +1,58 @@
+Actual lesson: 1
+Notable stuff:
+- This course will focus on ReactJS.
+- "Array" is a new data type in this course, array is also an object.
+- A normal function will be declared like: "function() {//code//}", but in ES6,
+a function can be declared with arrow function: sth = () => {//code//}
+- Arrow function:
+ + Arrow function doesn't support hoisting.
+ + You can have parameters in an arrow function
+ like this: 
+ const sum = (a,b) => {
+    console.log("The sum of 2 numbers is: ")
+    return a+b;
+ }
+ + return an object: const getAddress() => ({city: "Hanoi"})
+- Template literal:
+ + This is a functionality allowing multi-line strings, concatenation with ` `,...
+
+- Module in js:
+ + The <script> will now have access to "type" attribute
+- Template literal: 
+ + To use a module, you must export it first, each export will have its
+ own way to import
+  > First way: (this looks like a declaration of an object)
+   export {
+    function 1,
+    function 2,
+    function ...,
+   };
+
+   import {function1, function2} from "file.js";
+
+   > Second way: export a whole function.
+   export const myFunc = (parameter) => {
+    //code
+   }
+
+   > Third way: export parameters
+
+- Object and array:
+ + Array:
+  > Already said, you can access array elements with loops
+ + Object: 
+
+
+- forEach loop:
+ + this loops through each element of an array
+
+- map function:
+ + this loops through each element of an array and return
+ a new array.
+References:
+- You can find resource about React on react.dev
+Fun stuff: 
+
+Feedback: 
+- instead of console log can you use inner HTML instead, i think this is
+a good way for student to have an intuition with this.
