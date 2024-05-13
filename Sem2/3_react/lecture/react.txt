@@ -1,0 +1,16 @@
+Notable stuff:
+- We are studying about React.js, first we gotta install it along with Node.js.
+- We use React to better and faster construct our code
+- Vite is a translation tool that will compile the React "code" to html.
+- In the second step, we will need to create a new project with the command "npm create vite@latest"
+ + You will proceed as instructed by the terminal.
+ + "npm install"
+ + "npm run dev" to see basic control of your project website.
+- You will focus on the "src" folder in the project directory.
+ + The file has an unique file extension "jsx" which allow us to include html in js files.
+ (In theory, the code in jsx is compiled into js (i.e DOM))
+ + The code will be run in 'main.jsx', notice that we have to import all the files in there,
+ these file can be used if you call them as <Tag></Tag>
+ + if you want to declare a class, you can use the 'className=""' attribute.
+- You can also input parameters to avoid repetition looking kinda like 
+ "function foo(parameter) {parameter.name, parameter.value}"

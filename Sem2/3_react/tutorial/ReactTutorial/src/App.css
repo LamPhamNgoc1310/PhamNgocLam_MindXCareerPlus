@@ -1,0 +1,5 @@
+.app {
+  display: grid;
+  grid-template-columns: auto(4, 1fr);
+  gap: 30px;
+}

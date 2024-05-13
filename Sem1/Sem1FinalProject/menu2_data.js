@@ -23,7 +23,7 @@ let songs = [
     {
         name: 'Haru Haru',
         path: './assets/songs-audio/haru-haru.mp3',
-        artist: 'Ngot',
+        artist: 'BIG BANG',
         cover: './assets/songs/haru-haru-cover.jpg'
     },
 

@@ -1,0 +1,33 @@
+.card {
+    width: 100px;
+    height: auto;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-number {
+    font-size: 10px;
+    color: grey;
+}
+
+.card-attribute {
+    display: flex;
+    gap: 10px;
+}
+
+.card-attribute-item1 {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: black;
+}
+
+.card-attribute-item2 {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: purple;
+    color: black;
+}
+

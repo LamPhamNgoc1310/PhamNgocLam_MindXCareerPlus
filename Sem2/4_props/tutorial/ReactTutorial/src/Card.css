@@ -1,0 +1,41 @@
+.card {
+    width: 100%;
+    height: auto;
+}
+
+.card-image {
+    background-color: rgb(221, 218, 218);
+    width: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.card-number {
+    padding: 0 30px 0 30px;
+    font-size: 20px;
+    color: grey;
+}
+
+.card-name {
+    color: black;
+}
+.card-attribute {
+    display: flex;
+    gap: 10px;
+}
+
+.card-attribute-item1 {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: black;
+}
+
+.card-attribute-item2 {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: purple;
+    color: black;
+}
+

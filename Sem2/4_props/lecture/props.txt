@@ -1,0 +1,5 @@
+Notable stuff:
+- You can input a function inside the "props" parameter.
+ + It goes like this: {sayHello} in Card.jsx
+ + In App.jsx, you will write to input a parameter (actually a string in a method) 
+ <Card sayHello="<h1>Hello World<\h1>"/>
