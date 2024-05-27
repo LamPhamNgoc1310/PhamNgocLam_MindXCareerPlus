@@ -1,0 +1,16 @@
+Notable stuff:
+- Other ways to condition in React are to use: &&, ?? and ?
+ - "&&": {!fullName && <p>You haven't given a name</p>}
+ if the "!fullName" and <p> are true, return the <p>
+ - "??": {!fullName ?? <p>You haven't given a name</p>}
+ if the "!fullName" is null, return the "!fullName"
+ - "?" : {!fullName ? <p>You haven't given a name</p> : ''}
+ if "!fullName" is true, return <p>, if false, return ''
+- Lifting up state:
+  + handing data to other components in the components tree
+  + "data down, event up" is the principal.
+  + How to read this:
+   > Read from <Card ... /> in App.jsx
+   > What is that function/element in the props from the Card.jsx?
+   > What function gets called in Card.jsx and what are the parametes of that function?
+   > The change of component in App.jsx gets displayed.

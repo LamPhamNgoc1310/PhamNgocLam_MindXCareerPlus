@@ -1,0 +1,19 @@
+Notable stuff: 
+- Relook at functions in array: map() and filter().
+ + You can display an array in jsx by simply pass "{arr}"
+ + Map:
+  > In the below example, "item" attribute somewhat acts like the "i" (or index in for loop), whenever it's done mapping 1 element, it will move onto the next element.
+  > E.g:
+  const arr = [1,2,3,4,5]
+  arr.map((item) => {
+    return {item};
+  })
+ + Filter:
+  > Return variables with certain conditions, the syntax below can be explained with:
+  "item" is like "index"
+  it returns the condition.
+  > E.g:
+  arr.filter((item) => {
+    return item.age <= 5
+  })
+- "key" attribute:

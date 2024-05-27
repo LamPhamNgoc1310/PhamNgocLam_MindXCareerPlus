@@ -1,0 +1,5 @@
+Notable stuff:
+- the setCount function takes in a new value and starts comparing that value with the previous value
+ + Why comparing? If the values are different, the UI will be updated
+- [useState]'s purpose is for saving data (not functions), when updated, the data will be re-rendered.
+- Some of the code that we write in "App.jsx" aren't in "Card.jsx", so if we want to print them out, we have to add {prop.children} "Card.jsx"

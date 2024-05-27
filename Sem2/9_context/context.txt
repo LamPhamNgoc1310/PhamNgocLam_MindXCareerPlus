@@ -1,0 +1,2 @@
+Note:
+- context acts like a database, providing data to the components needing it.

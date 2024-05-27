@@ -1,0 +1,2 @@
+Notes:
+- Side Effects are logical steps outside the components, detecting changes from the DOM tree.
