@@ -1,2 +1,9 @@
 Note:
 - context acts like a database, providing data to the components needing it.
+- context also gives you a shorter way to move data between components.
+- API:
+ + API is a medium between backend and user (it's like a remote controller to an AC or TV.)
+ *** async/await and Promise *** (Investigate about this)
+ - useEffect{() => {//code}, [state] } will execute the code if state changes
+                               ^
+                            this is called dependency
