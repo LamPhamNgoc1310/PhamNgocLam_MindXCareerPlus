@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: grid;
+  background-color: white;
+  gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 50px;
+}

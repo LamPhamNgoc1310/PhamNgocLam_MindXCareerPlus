@@ -1,0 +1,65 @@
+.card {
+    width: 100%;
+  }
+  
+  .card-image {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 50px;
+    border-radius: 20px;
+    height: 400px;
+  }
+  
+  .card-info {
+    padding: 0px 30px 30px 30px;
+  }
+  
+  .card-no {
+    font-size: 26px;
+    font-weight: 600;
+    color: gray;
+    margin-top: 10px;
+  }
+  
+  .card-name {
+    font-size: 46px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .card-attribute {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card-attribute-item {
+    width: 120px;
+    font-size: 20px;
+    padding: 5px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .card-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .card-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0069f2;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+  }

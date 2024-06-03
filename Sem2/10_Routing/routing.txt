@@ -1,0 +1,42 @@
+Note:
+- Router is that 'bar' at the top of your browser, changes in URLs will change the content of the respective URLs.
+ (e.g: 
+ URL: /welcome changes to /products
+ only the content of welcome.html will change to that of product.html)
+ + The header won't be change because of SPA (Single Page Application)
+- Installation: after creating your project, create react-router in the project with "npm install react-router-dom"
+- Mechanics:
+ 1. Since react doesnt work directly with your browser, so be able to work with URLs, you MUST define the app in the browser supporting the routing mechanic.
+
+ 2. An app can have many routes, so there must be a way to bundle up the routes into some kind of manager for React to work with.
+
+ 3. Each router is a different interface, e.g:
+    example.com/ => ComponentA
+    example.com/products => ComponentB
+    example.com/cart => ComponentC
+    example.com/about => ComponentD
+- Configuration your router:
+ + Import your library: import { BrowserRouter } from 'react-router-dom'
+ + Put your components into the context <BrowserRouter>
+ + The route is only active if you have the correct URL, for example, if the url is '/home', the content of the component linking to that url will be displayed, not that of '/login'
+ + Bundling:
+  > import { Routes } from 'react-router-dom'
+  > import { Route } from 'react-router-dom'
+  Note that the structure is 
+  <Routes> 
+    <Route path='/[the link]' element='[component]'> 
+  <Routes/>
+  + the ":id" can take the link of a specific component.
+- Link and Navlink:
+ + import { Link, NavLink} from "react-router-dom";
+ + React provides SPA (Single Page Application), which fetch and UPDATEs only the necessary component, not reloading the whole site just to update 1 image.
+ + These components prevents your page from reloading after changing its directory.
+ + So there exists this 'Header.jsx' file which is the navigation bar, in here, there are the links to each component of the website.
+ + <Link> will simply redirect without reloading the page to its initial state.
+   <NavLink> will do the same as <Link> but it is able to take component activity.
+- Outlet provides us Route Nesting:
+  + import {Outlet} from "react-router-dom";
+- Query params and URL params:
+ + These allow you to search with the URL bar.
+ + URL params is like the username (e.g: youtube.com/LamPham1310)
+ + Query params uses queries (indicated by the "?") (e.g: youtube.com/?sort="name")
