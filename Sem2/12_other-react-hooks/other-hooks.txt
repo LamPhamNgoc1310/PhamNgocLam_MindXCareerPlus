@@ -1,3 +1,4 @@
 Note:
 - useRef hook:
  + useRef hook doesn't re-render immediately like useState hook
+ + useMemo can memorize the previous state and won't re-render that state, it will only re-render it the afformentioned state is changed.

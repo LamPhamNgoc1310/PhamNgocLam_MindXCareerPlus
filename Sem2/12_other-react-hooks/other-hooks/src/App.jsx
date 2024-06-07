@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import './App.css'
 
 function App() {
@@ -7,17 +7,33 @@ function App() {
   const handleStateClick = () => {
     setCount(count+1);
   }
+  const [listNumber, setListNumber] = useState([1,2,3,4,5,6]);
+  // the code below re-render the page, so we use an alternative hook "useMemo"
+  // const filteredNumber = useRef(
+  //   listNumber.filter((item)=> {
+  //     console.log('run')
+  //     return item%2===0;
+  //   })
+  // )
+  const filteredNumber = useMemo(()=>{
+    return listNumber.filter((item)=> {
+      console.log('run')
+      return item%2 === 0;
+    }) 
+  });
 
-  const countRef = useRef(0)
-  const handleRefClick = () => {
-    countRef.current++;
+  const handleAddRandom = () => {
+    const newNumber = Math.round(Math.random(1,10)*100);
+    setListNumber([...listNumber,newNumber])
   }
+
   return (
     <>
+      {filteredNumber}
       <p>Count state: {count}</p>
       <button onClick={handleStateClick}>Change State Click</button>
-      <p>Count Ref: {countRef.current}</p>
-      <button onClick={handleRefClick}>Change Ref Click</button>
+
+      <button onClick={handleAddRandom}>Add Random Number</button>
 
     </>
   )
