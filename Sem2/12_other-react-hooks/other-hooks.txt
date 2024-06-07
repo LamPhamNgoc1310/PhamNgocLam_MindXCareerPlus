@@ -1,4 +1,15 @@
 Note:
 - useRef hook:
- + useRef hook doesn't re-render immediately like useState hook
+ + useRef hook:
+  how: const countRef = useRef(0)
+  > it's an abbreviation for DOM-ing
+  > doesn't re-render immediately like useState hook
+  > you must add .current to the back if you want to take out a Ref current value.
+  > it can save your value if you re-render the page.
  + useMemo can memorize the previous state and won't re-render that state, it will only re-render it the afformentioned state is changed.
+ + useCallback()
+  > you will export default([the component], (prevProps, nextProps) => {return boolean value}) => this hook return a boolean value, if 'true', never rerender, if 'false', component will get re-rendered
+  > interacts with component.
+  > when you import the memo-ed component, it will track the changes of that component,
+  when the props in that component gets updated, that component will get re-rendered.
+  
