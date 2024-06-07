@@ -1,2 +1,10 @@
 Note:
-- 
+- then() method: to access the returned result of Promise when it's fulfilled.
+- json(): taking the result from an API, this is a Promise, so if you want to see its result, you have to use .then() again
+- Asynchronous: tasks are executed at their designated timeout.
+- Synchronous: tasks are executed sequentially if you nest functions in side functions.
+- Promise (ES6): 
+ + it's a cascading sequence of returning and taking parameters.
+ + .then() will take the returned result of ONLY the previous function.
+ + .finally() will always runs
+ + .catch() will catch errors.

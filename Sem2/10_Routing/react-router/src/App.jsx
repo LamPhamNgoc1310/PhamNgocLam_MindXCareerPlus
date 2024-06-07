@@ -2,29 +2,32 @@ import { Routes, Route } from 'react-router-dom'
 import React from 'react'
 import { useState } from 'react'
 import './App.css'
-import Home from './screens/home.jsx'
-import Login from './screens/login.jsx'
-import Header from './Header.jsx'
-import Profile from './screens/profile.jsx'
-import Setting from './screens/setting.jsx'
 function App() {
 
-  const[fullName, setFullName] = useState("Hello world")
+  const[listPokemon, setListPokemon] = useState([])
 
+  // const queryPokemon = () => {
+  //   const result =  fetch("https://pokeapi.co/api/v2/pokemon").then((result) => {
+  //     return result.json();
+  //   }).then((rs)=>{
+  //     setListPokemon(rs.results);
+  //     return rs;
+  //   })
+  // }
 
+  const queryPokemon = async () => {
+    const query = await fetch('https://pokeapi.co/api/v2/pokemon');
+    const result = await query.json();
+    console.log(result);
+  }
 
   return (
     <div className="reactApp">
-      <Header />
       <h1>Hello World</h1>
-
-      {/* Lesson 10 */}
-      {/* <Routes>
-        <Route path='/home' element={<Home />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/profile' element={<Profile/>} />
-          <Route path='/setting' element={<Setting/>}></Route>
-      </Routes> */}
+      <button onClick={queryPokemon()}>Query API</button>
+      {listPokemon.map((pokemon, idx) => {
+        return <div key={idx}> {pokemon.name} </div>
+      })}
     </div>
   )
 }

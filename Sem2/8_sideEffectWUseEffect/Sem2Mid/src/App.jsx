@@ -7,7 +7,11 @@ import Menu from './components/Menu/Menu.jsx'
 
 
 function App() {
+  const [selectedItem, setSelectedItem] = useState(Data[0]);
 
+  const handleItemClick = (item) => {
+    setSelectedItem(item);
+  }
   return (
     <>
 
@@ -17,18 +21,17 @@ function App() {
       <p>What are you gonna watch today?</p>
 
       <Banner
-        image={Data[0].image}
-        movieName={Data[0].movieName}
-        description={Data[0].description}
+        image={selectedItem.image}
+        movieName={selectedItem.movieName}
+        description={selectedItem.description}
       />
 
-      {/* Stuck, khong hien thi cac anime ra duoc */}
       <div className="new-release">
         <h2>New Release</h2>
         <div className='new-release-content'>
           {
-            Data.map((item, index)=>{
-              return <Menu item={item} key={index}/>
+            Data.map((item)=>{
+              return <Menu item={item} onSelected={handleItemClick}/>
             })
           }
         </div>

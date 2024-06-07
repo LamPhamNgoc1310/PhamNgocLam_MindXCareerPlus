@@ -1,16 +1,38 @@
 .Menu {
-    width: 10vw;
-    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    text-align: center;
+    width: 170px;
+    height: 305px;
+    object-fit: cover;
+    position: relative;
 }
 
 .menu-item-image {
-    width: 100px;
+    width: 170px;
+    height: 204px;
+    position: absolute;
+    z-index: -1;
 }
 
 .menu-item-image img {
-    width: 90px;
+    width: 170px;
+    height: 204px;
+    border-radius: 10px;
+    position: relative;
+}
+.gradient {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    
+    width: 170px;
+    height: 204px;
+    background: linear-gradient(180deg, rgba(29, 29, 29, 0) 0%, #0F1E29 100%);
+
+}
+.Menu p {
+    color: #FFF;
+    margin-top: 218px;
 }

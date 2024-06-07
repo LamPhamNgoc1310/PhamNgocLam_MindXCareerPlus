@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    width: 1174px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 36px;
+    
+}
+
+p, input {
+    font-size: 18px;
+    color: #868686;
+}
+
+input {
+    border: none;
+    width: 374px;
+    background-color: #374151;
+    border-radius: 30px;
+    padding: 8px 8px 8px 18px;
+}
