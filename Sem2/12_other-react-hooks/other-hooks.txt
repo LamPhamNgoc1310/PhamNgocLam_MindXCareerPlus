@@ -1,0 +1,3 @@
+Note:
+- useRef hook:
+ + useRef hook doesn't re-render immediately like useState hook
