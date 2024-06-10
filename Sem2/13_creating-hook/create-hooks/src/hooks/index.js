@@ -17,4 +17,19 @@ const useSearchInput = () => {
     };
 };
 
-export {useSearchInput}
+const useDebounce = (stateValue) => {
+    const [dataDebounce, setDataDebounce] = useState('');
+    useEffect(() => {
+        // the waiting time after the user has completed their prompt
+        const id = setTimeout(() => {
+            setDataDebounce(stateValue);
+        }, 1000);
+        return () => {
+            clearTimeout(id);
+        }
+    }, [stateValue])
+    return dataDebounce
+}
+
+export {useSearchInput, useDebounce}
+
