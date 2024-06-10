@@ -1,0 +1,5 @@
+Note:
+- we can create our own hooks by creating a .js file.
+ The Basic
+ + the name of your hook is "use..." by convention.
+ + in this file, we make an arrow function that returns an array ([]) (since useState returns an array) or object (depends on your demand)
