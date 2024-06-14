@@ -23,7 +23,7 @@ let storageUsername = localStorage.getItem('Username');
 let storagePassword = localStorage.getItem('Password');
 
 function authentication(username, password) {
-    if(username === storageUsername && password === storagePassword){
+    if(username === "username" && password === "password"){
         return true;
     }
     else {

@@ -1,2 +1,9 @@
 Notes:
-- Side Effects are logical steps outside the components, detecting changes from the DOM tree.
+- Side Effect consists of internal interaction: HTTP request, response, interaction with local storage, session storage,...
+ + useEffect{() => {//code}, [state] } will execute the code if state changes
+                               ^
+                            this is called dependency
+  > dependency is what affect your useEffect(), 
+    1. if not declared, the useEffect will run all time.
+    2. if the array is empty, it will depend on every component that have change.
+    3. if there's something, your useEffect will depends on it.

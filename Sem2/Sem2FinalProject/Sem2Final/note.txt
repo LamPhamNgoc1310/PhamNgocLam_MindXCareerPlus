@@ -1,0 +1,2 @@
+- có thể sử dụng <Outlet /> của react-router để làm phần player bên dưới cùng.
+- sử dụng "!!" để biến đổi một biến (không phải boolean) sang dạng boolean, "!!" = true, "!" = false

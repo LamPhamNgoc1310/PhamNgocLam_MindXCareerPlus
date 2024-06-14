@@ -1,9 +1,16 @@
 Note:
+- TLDR: context makes your variables go GLOBAL.
+ + e.g: the Theme changing feature.
 - context acts like a database, providing data to the components needing it.
-- context also gives you a shorter way to move data between components.
+ + context makes your values GLOBAL, not native to a file anymore, also gives you a shorter way to move data between components.
+ + for example, a count state declared in the file Counting.jsx, then you can only use it in that file.
+ + If you want to use the context you created you must use ThemeContext.Provider
+ + The steps:
+  1. create a context
+  2. create a context Provider
+  3. export and import to use in another file
+
 - API:
  + API is a medium between backend and user (it's like a remote controller to an AC or TV.)
  *** async/await and Promise *** (Investigate about this)
- - useEffect{() => {//code}, [state] } will execute the code if state changes
-                               ^
-                            this is called dependency
+

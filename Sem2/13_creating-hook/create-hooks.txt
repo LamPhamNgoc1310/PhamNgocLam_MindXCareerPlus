@@ -1,5 +1,26 @@
 Note:
 - we can create our own hooks by creating a .js file.
- The Basic
- + the name of your hook is "use..." by convention.
- + in this file, we make an arrow function that returns an array ([]) (since useState returns an array) or object (depends on your demand)
+  + The Basic: hook is like a function
+   > you create your own hook when you want to group up the available hooks (i.e: useState, useEffect,...) and you might want to make some modification.
+   > hook can be used inside of another hook.
+   > the name of your hook is "use..." by convention.
+   > in this file, we make an arrow function that returns an array ([]) (since useState returns an array) or object (depends on your demand)
+  + useDebounce is like delaying the value updating after a while.
+   > this is used for searching after the user has completed the searching prompt.
+    e.g: 
+    const useDebounce = (stateValue) => {
+    const [dataDebounce, setDataDebounce] = useState('');
+    const useEffect(() => {
+        const id = setTimeout(() => {
+        setDataDebounce(stateValue);
+        }, 1000);
+        return () => {
+        clearTimeout(id);
+        };
+    }, [stateValue]);
+    return dataDebounce;
+    };
+
+- Reminder about the final project:
+ + useEffect, context, states & props.
+ + useEffect will return value AFTER the main page "App.jsx" has done its return.

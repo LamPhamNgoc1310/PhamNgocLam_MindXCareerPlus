@@ -6,8 +6,11 @@ Note:
   > doesn't re-render immediately like useState hook
   > you must add .current to the back if you want to take out a Ref current value.
   > it can save your value if you re-render the page.
- + useMemo can memorize the previous state and won't re-render that state, it will only re-render it the afformentioned state is changed.
+ + useMemo 
+  > used for values/variables
+  > can memorize the previous state and won't re-render that state, it will only re-render it the afformentioned state is changed.
  + useCallback()
+  > used for functions
   > you will export default([the component], (prevProps, nextProps) => {return boolean value}) => this hook return a boolean value, if 'true', never rerender, if 'false', component will get re-rendered
   > interacts with component.
   > when you import the memo-ed component, it will track the changes of that component,
