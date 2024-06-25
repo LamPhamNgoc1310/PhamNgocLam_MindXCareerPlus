@@ -1,5 +1,6 @@
-import { createContext } from "react";
+import { useState } from "react";
 
-const CheckBoxContext = createContext(false)
-
-export default CheckBoxContext
+export const useCheckBox = () => {
+    const [checkBox, setCheckBox] = useState(false);
+    return {checkBox, setCheckBox};
+}

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { useContext } from 'react';
-import CheckBoxContext from '../context/CheckBoxStatus';
+
+import { useCheckBox } from '../context/CheckBoxStatus';
 
 export default function Active() {
   const [detail, setDetail] = useState("");
   const [items, setItems] = useState([]);
-  const checkBoxCtx = useContext(CheckBoxContext)
+  const [checkBox, setCheckBox] = useCheckBox(false)
   // Helper functions
   function addDetail() {
     // if no item typed in
@@ -40,8 +40,9 @@ export default function Active() {
       <ul>
         {items.map((item) => {
           return (
+
             <li key={item.id} className="todo-item">
-              <input type="checkbox" onChange={(e)=>console.log(e.target.checked)}/>{item.value}
+              <input type="checkbox" checked={checkBox} onChange={(e) => {setCheckBox(!checkBox); console.log(e.target.checked)}}/>{item.value}
             </li>
           )
         })}

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
 
+
 export default function All() {
     // States, hooks
     const [detail, setDetail] = useState("");
-    const [items, setItems] = useState ([]);
-
+    const [items, setItems] = useState([]);
 
     // Helper functions
     function addDetail() {
@@ -48,7 +48,7 @@ export default function All() {
                 {items.map((item) => {
                     return (
                         <li key={item.id} className="todo-item">
-                            <input type="checkbox"/>{item.value}
+                            <input type="checkbox" />{item.value}
                             <button onClick={() => deleteDetail(item.id)}>🗑️</button>
                         </li>
                     )
