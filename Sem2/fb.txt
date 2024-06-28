@@ -1,2 +1,4 @@
 - Có bài tập về nhà để luyện phần kiến thức đã học trên lớp (không quá khó để làm quen).
 - Bài thực hành nên để học viên tự làm.
+- Mentor có thể sử dụng bảng để demo nhiều hơn vì một số phần kiến thức khá khó học.
+- Nên cho một số mốc thời gian khi thời gian làm sp cuối khoá đến gần.

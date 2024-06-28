@@ -1,5 +1,9 @@
 {
   "devDependencies": {
     "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "antd": "^5.18.1",
+    "react-router": "^6.23.1"
   }
 }

@@ -1,0 +1,65 @@
+
+.landingBody {
+    background-image: url(./assets/landing-cat-bg.gif);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Zhi Mang Xing';
+    font-size: 80px;
+    color: aliceblue;
+}
+
+.banner .landing-button .join-now {
+    text-decoration: none;
+    font-family: 'Zhi Mang Xing';
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    font-size: 50px;
+    border-radius: 30px;
+    padding: 15px 32px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner .landing-button .join-now:hover {
+    background-color: #E36588;
+}
+
+/* SECOND CONTAINER */
+.container2{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-size: 70px;
+    margin-top: 20vh;
+}
+.container2 h2{
+    font-family: 'Zhi Mang Xing';
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    color: aliceblue;
+}
+
+.container2 .references {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container2 .references img{
+    width: 200px;
+    height: 100px;
+    object-fit: scale-down;
+}
+
+.credit {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
