@@ -1,9 +1,10 @@
-import './App.css'
-import { useState } from 'react';
+import "./App.css";
+import { useState } from "react";
+import CheckBox from "./CheckBox";
 
 function App() {
   // States, hooks
-  const [tab, setTab] = useState("all")
+  const [tab, setTab] = useState("all");
   const [input, setInput] = useState("");
   const [itemList, setItemList] = useState([
     {
@@ -15,7 +16,7 @@ function App() {
       id: 2,
       value: "Wake up",
       status: "completed",
-    }
+    },
   ]);
 
   // Helper functions
@@ -26,69 +27,110 @@ function App() {
       return;
     }
 
+    const newItemId =
+      itemList.length > 0 ? itemList[itemList.length - 1].id + 1 : 1;
     const item = {
-      id: itemList[itemList.length+1].id + 1,
+      id: newItemId,
       value: input,
       status: "active",
     };
 
     setItemList((itemList) => [...itemList, item]);
     setInput("");
-
   }
 
-  function deleteItem(id) {
-    // filter out items with different id from the chosen item.
-    const newList = itemList.filter((item) => item.id !== id);
-    setItemList(newList)
-  }
+  const toggleItemStatus = (itemId) => {
+    setItemList((prevItems) =>
+      prevItems.map((item) =>
+        item.id === itemId
+          ? {
+              ...item,
+              status: item.status === "completed" ? "active" : "completed",
+            }
+          : item
+      )
+    );
+  };
+
   return (
     <>
-      <div className='App'>
+      <div className="App">
         {/* 1. Header */}
         <h1>#todo</h1>
-        <button onClick={() => setTab("all")}>
-          All
-        </button>
+        <br />
+        <br />
 
-        <button onClick={() => setTab("active")}>
-          Active
-        </button>
+        <div className="app-add-detail-section">
+          <button
+            className="btn-lg app-btn-title"
+            onClick={() => setTab("all")}
+            style={{ color: tab === "all" ? "blue" : "black" }}
+          >
+            All
+          </button>
 
-        <button onClick={() => setTab("completed")}>
-          Completed
-        </button>
-        {/* 2. input and add button  */}
-        {/* Display the input box if tab is not 2 */}
-        {
-          tab !== "completed" && (
+          <button
+            className="btn-lg app-btn-title"
+            onClick={() => setTab("active")}
+            style={{ color: tab === "active" ? "blue" : "black" }}
+          >
+            Active
+          </button>
+
+          <button
+            className="btn-lg app-btn-title"
+            onClick={() => setTab("completed")}
+            style={{ color: tab === "completed" ? "blue" : "black" }}
+          >
+            Completed
+          </button>
+          <br />
+          <br />
+        </div>
+        <div className="">
+          {tab !== "completed" && (
             <div>
-              <input type="text"
-                className="all-add-items"
+              <input
+                type="text"
+                className="app-add-detail-input"
                 placeholder="add detail"
                 value={input}
-                onChange={e => setInput(e.target.value)} />
-              <button onClick={addItem}>
+                onChange={(e) => setInput(e.target.value)}
+              />
+              <button className="btn-sm app-add-detail-btn" onClick={addItem}>
                 Add
               </button>
+              <br />
             </div>
           )}
+        </div>
 
-        {/* 3. list of all items  */}
-        <ul>
-          {itemList.map((item) => {
-            return (
-              <li key={item.id} className="todo-item">
-                <input type="checkbox" />{item.value}
-                <button onClick={() => deleteItem(item.id)}>🗑️</button>
-              </li>
-            )
-          })}
-        </ul>
-
+        <div className="check-box">
+          {itemList
+            ?.filter((item) => {
+              if (tab === "all") {
+                return true;
+              } else if (tab === "active") {
+                return item.status === "active";
+              } else if (tab === "completed") {
+                return item.status === "completed";
+              }
+            })
+            .map((item) => {
+              return (
+                <CheckBox
+                  key={item.id}
+                  toDoItem={item}
+                  setItemList={setItemList}
+                  itemList={itemList}
+                  toggleItemStatus={toggleItemStatus}
+                />
+              );
+            })}
+        </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
