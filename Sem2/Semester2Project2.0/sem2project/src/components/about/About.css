@@ -1,0 +1,16 @@
+.about-body {
+    text-align: center;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-body-content {
+    padding: 0 40px 0 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.about-ul {
+    list-style-type: none;
+}
