@@ -8,7 +8,7 @@ function App() {
       <Routes>
         {publicRouter.map((route, index) => {
           return (
-            <Route 
+            <Route
             path={route.path} 
             element={route.component} 
             key={index} />

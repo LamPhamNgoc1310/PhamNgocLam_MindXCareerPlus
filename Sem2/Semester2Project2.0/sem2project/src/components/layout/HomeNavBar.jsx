@@ -6,6 +6,7 @@ import logo from "/Users/lampham_1310/Programming/VSCode/XCareer/PhamNgocLam_Min
 const HomeNavBar = () => {
   //   const [playlist, setPlaylist] = useState(0);
   const [input, setInput] = useState("");
+  const [showConfirm, setShowConfirm] = useState(false);
   //   taken from to do list app
   const [itemList, setItemList] = useState([
     {
@@ -22,29 +23,42 @@ const HomeNavBar = () => {
     },
   ]);
   function addPlaylist() {
+    if (!input) {
+      alert("Please enter something in the box");
+      return;
+    }
     const newItemId =
       itemList.length > 0 ? itemList[itemList.length - 1].id + 1 : 1;
     const item = {
       id: newItemId,
+      path: "/playlist3",
       title: input,
+      song: [],
     };
 
     setItemList((itemList) => [...itemList, item]);
-    setInput("");
     console.log(itemList);
   }
 
   const handleCreatePlaylist = () => {
-    prompt(
-      <input
-        type="text"
-        className="app-add-detail-input"
-        placeholder="add detail"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-    );
+    <input
+      type="text"
+      className="app-add-detail-input"
+      placeholder="add detail"
+      value={input}
+      onChange={(e) => setInput(e.target.value)}
+    />;
     addPlaylist();
+  };
+
+  // handling confirmation and cancellation
+  const handleConfirm = () => {
+    handleCreatePlaylist();
+    setShowConfirm(false);
+  };
+
+  const handleCancel = () => {
+    setShowConfirm(false);
   };
 
   return (
@@ -71,10 +85,24 @@ const HomeNavBar = () => {
 
         <button
           className="homeNavbar-createPlaylistBtn"
-          onClick={handleCreatePlaylist}
+          onClick={() => setShowConfirm(true)}
         >
           Create Playlist
         </button>
+
+        {/* only displayed if clicked on Create playlist */}
+        {showConfirm && (
+          <div className="confirm-dialog">
+            <p>Enter playlist name:</p>
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            <button onClick={handleConfirm}>OK</button>
+            <button onClick={handleCancel}>Cancel</button>
+          </div>
+        )}
 
         <ul className="homeNavbar-ul-playlists">
           {itemList.map((item) => {
