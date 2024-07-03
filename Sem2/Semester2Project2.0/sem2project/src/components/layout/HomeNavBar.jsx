@@ -2,9 +2,9 @@ import "./HomeNavBar.jsx";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import logo from "/Users/lampham_1310/Programming/VSCode/XCareer/PhamNgocLam_MindXCareerPlus/Sem2/Semester2Project2.0/sem2project/src/assets/cate2.png";
+import "./HomeNavBar.css"
 
 const HomeNavBar = () => {
-  //   const [playlist, setPlaylist] = useState(0);
   const [input, setInput] = useState("");
   const [showConfirm, setShowConfirm] = useState(false);
   //   taken from to do list app
@@ -31,12 +31,13 @@ const HomeNavBar = () => {
       itemList.length > 0 ? itemList[itemList.length - 1].id + 1 : 1;
     const item = {
       id: newItemId,
-      path: "/playlist3",
+      path: `/playlist${newItemId}`,
       title: input,
       song: [],
     };
 
     setItemList((itemList) => [...itemList, item]);
+    setInput("");
     console.log(itemList);
   }
 
