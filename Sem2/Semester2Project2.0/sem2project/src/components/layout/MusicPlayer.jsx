@@ -27,7 +27,7 @@ const MusicPlayer = () => {
 
   const nextSong = () => {
     setCurrentSongIndex((prevIndex) => (prevIndex + 1) % Songs.length);
-    console.log(Songs[currentSongIndex]);
+    // console.log(Songs[currentSongIndex]);
   };
 
   const prevSong = () => {
