@@ -25,6 +25,7 @@ let Songs = [
     id: 0,
     title: "Đợi ft Wean",
     artist: ["52Hz"],
+    path: "https://drive.google.com/file/d/1pUwxGXj0uDnVX8OA5DLjXPiLlDpxici2/view?usp=sharing"
   },
   {
     id: 1,

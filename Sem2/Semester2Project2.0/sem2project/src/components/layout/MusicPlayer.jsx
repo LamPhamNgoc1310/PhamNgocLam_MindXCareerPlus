@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
-import Songs from "../../../public/data/SONGS_DATA";
-// import React, { useState, useRef } from "react";
+import Songs from "../../assets/data/SONGS_DATA";
+// import đợi-ft-wean.mp3 from "../../../public/songs-audio"
+
 import "./MusicPlayer.css";
 
 // will have to use props to take in the song title, artist, duration
@@ -11,11 +12,13 @@ const MusicPlayer = () => {
   const audioRef = useRef(null);
   const playPause = () => {
     const audioElement = audioRef.current;
+    console.log(Songs[currentSongIndex].path);
+    console.log(process.env.PUBLIC_URL + Songs[currentSongIndex].path);
     setIsPlaying(!isPlaying);
     if (isPlaying == true) {
       audioElement
         .play()
-        .catch((error) => console.error("Failed to play audio:", error));
+        // .catch((error) => console.error("Failed to play audio:", error));
       console.log("is playing");
     } else {
       audioElement.pause();
@@ -33,16 +36,21 @@ const MusicPlayer = () => {
       (prevIndex) => (prevIndex - 1 + Songs.length) % Songs.length
     );
   };
-  // console.log(Songs);
   return (
     <div className="musicPlayer">
-      <div className="musicPlayer-song">{Songs[currentSongIndex].title}</div>
+      <div className="musicPlayer-song">
+        <img src={Songs[currentSongIndex].cover} alt="" />
+        {Songs[currentSongIndex].title}
+      </div>
 
       <div className="musicPlayer-player"></div>
       <button onClick={playPause}>Play/Pause</button>
       <button onClick={nextSong}>Next Song</button>
       <button onClick={prevSong}>Previous Song</button>
-      <audio  src={process.env.PUBLIC_URL + Songs[currentSongIndex].path} ref={audioRef} />
+      <audio
+        src={process.env.PUBLIC_URL + Songs[currentSongIndex].path}
+        ref={audioRef}
+      />
 
       <div className="musicPlayer-volume">
         <input

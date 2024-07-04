@@ -3,9 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .layout {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout .homeNavBar {
+    display: flex;
+}
+/* .layout {
     display: grid;
-    grid-template-columns: 10vw, 80vw;
+    grid-template-columns: 100px, 800px;
     grid-template-rows: 90vh auto;
 }
 .homeNavBar {
@@ -21,6 +30,6 @@
 
 .musicPlayer {
     grid-column: 1 / span 2;
-}
+} */
 
 
