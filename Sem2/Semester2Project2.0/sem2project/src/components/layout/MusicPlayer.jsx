@@ -48,8 +48,9 @@ const MusicPlayer = () => {
       <button onClick={nextSong}>Next Song</button>
       <button onClick={prevSong}>Previous Song</button>
       <audio
-        src={process.env.PUBLIC_URL + Songs[currentSongIndex].path}
+        src={Songs[currentSongIndex].path}
         ref={audioRef}
+        preload="metadata"
       />
 
       <div className="musicPlayer-volume">

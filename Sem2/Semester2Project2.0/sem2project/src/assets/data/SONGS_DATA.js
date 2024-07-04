@@ -25,18 +25,19 @@ let Songs = [
     id: 0,
     title: "Đợi ft Wean",
     artist: ["52Hz"],
-    path: "https://drive.google.com/file/d/1pUwxGXj0uDnVX8OA5DLjXPiLlDpxici2/view?usp=sharing"
+    path: "songs-audio/đợi-ft-wean.mp3"
   },
   {
     id: 1,
     title: "Glue song",
     artist: ["Beedabadoobee"],
-
+    path: "songs-audio/glue-song.mp3"
   },
   {
     id: 2,
     title: "Haru haru",
     artist: ["BIG BANG"],
+    path: "songs-audio/haru-haru.mp3"
   },
   
 ];
