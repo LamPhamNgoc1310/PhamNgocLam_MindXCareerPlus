@@ -12,14 +12,10 @@ const MusicPlayer = () => {
   const audioRef = useRef(null);
   const playPause = () => {
     const audioElement = audioRef.current;
-    console.log(Songs[currentSongIndex].path);
-    console.log(process.env.PUBLIC_URL + Songs[currentSongIndex].path);
     setIsPlaying(!isPlaying);
-    if (isPlaying == true) {
-      audioElement
-        .play()
-        // .catch((error) => console.error("Failed to play audio:", error));
-      console.log("is playing");
+    console.log(audioElement.play());
+    if (audioElement.paused == true) {
+      audioElement.play();
     } else {
       audioElement.pause();
     }
@@ -28,7 +24,6 @@ const MusicPlayer = () => {
 
   const nextSong = () => {
     setCurrentSongIndex((prevIndex) => (prevIndex + 1) % Songs.length);
-    // console.log(Songs[currentSongIndex]);
   };
 
   const prevSong = () => {
@@ -43,12 +38,14 @@ const MusicPlayer = () => {
         {Songs[currentSongIndex].title}
       </div>
 
-      <div className="musicPlayer-player"></div>
-      <button onClick={playPause}>Play/Pause</button>
-      <button onClick={nextSong}>Next Song</button>
-      <button onClick={prevSong}>Previous Song</button>
+      <div className="musicPlayer-player">
+        <button onClick={prevSong}>Prev</button>
+        <button onClick={playPause}>Play/Pause</button>
+        <button onClick={nextSong}>Next</button>
+        <div>...loading</div>
+      </div>
       <audio
-        src={Songs[currentSongIndex].path}
+        src={process.env.PUBLIC_URL + Songs[currentSongIndex].path}
         ref={audioRef}
         preload="metadata"
       />

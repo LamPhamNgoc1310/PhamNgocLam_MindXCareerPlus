@@ -7,16 +7,14 @@ const Layout = () => {
   return (
     <div className="layout">
       <div className="homeNavBar">
-        <div className="homeNavBar-navBar">
-          <HomeNavBar />
-        </div>
-        <div className="outlet">
-          <Outlet />
-        </div>
+        <HomeNavBar />
+      </div>
+      <div className="outlet">
+        <Outlet />
       </div>
 
       <div className="musicPlayer">
-        <MusicPlayer />
+          <MusicPlayer />
       </div>
     </div>
   );

@@ -1,0 +1,16 @@
+.homeNavbar {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-left: 20px ;
+}
+
+.navbar-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.homeNavbar-ul, .homeNavbar-ul-playlists {
+    list-style-type: none;
+}

@@ -4,7 +4,25 @@
     box-sizing: border-box;
 }
 
-/* .musicPlayer {
+.musicPlayer {
     text-align: center;
-    width: 50vw;
-} */
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.musicPlayer-song {
+    height: 50px;
+    width: 175px;
+}
+
+.musicPlayer-song img {
+    width: 50px;
+}
+
+button {
+    height: 30px;
+    background-color: grey;
+}

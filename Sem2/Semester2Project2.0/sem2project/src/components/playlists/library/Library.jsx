@@ -2,8 +2,8 @@
 
 const Library = () => {
   return (
-    <div>
-      Library content
+    <div className="library">
+      
     </div>
   )
 }

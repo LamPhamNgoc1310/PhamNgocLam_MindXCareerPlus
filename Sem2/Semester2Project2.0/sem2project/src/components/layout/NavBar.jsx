@@ -5,17 +5,18 @@ export default function NavBar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        <NavLink to="/">
-          <img
-            className="navbar-logo-img"
-            src={logo}
-            alt="nah man img aint available rn"
-          />
-        </NavLink>
-      </div>
+          <NavLink to="/" className="navbar-logo-link">
+            <img
+              className="navbar-logo-img"
+              src={logo}
+              alt="nah man img aint available rn"
+            />
+            <div className="navbar-logo-text">Catify</div>
+          </NavLink>
+        </div>
       <ul className="navbar-ul">
         <li className="navbar-li">
-          <NavLink activeClassName="navbar-li-navlink-active" to="/home">
+          <NavLink to="/home">
             Home
           </NavLink>
         </li>

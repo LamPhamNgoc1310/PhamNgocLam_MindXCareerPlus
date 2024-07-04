@@ -60,12 +60,13 @@ const HomeNavBar = () => {
     <div>
       <div className="homeNavbar">
         <div className="navbar-logo">
-          <NavLink to="/">
+          <NavLink to="/" className="navbar-logo-link">
             <img
               className="navbar-logo-img"
               src={logo}
               alt="nah man img aint available rn"
             />
+            <div className="navbar-logo-text">Catify</div>
           </NavLink>
         </div>
 
