@@ -11,15 +11,9 @@ const HomeNavBar = () => {
   const [itemList, setItemList] = useState([
     {
       id: 1,
-      path: "/liked",
+      path: "/home/liked",
       title: "Liked songs",
       songs: [],
-    },
-    {
-      id: 2,
-      path: "/playlist2",
-      title: "Personal Playlist",
-      song: [],
     },
   ]);
   function addPlaylist() {
@@ -80,7 +74,7 @@ const HomeNavBar = () => {
             <NavLink to="/home">Home</NavLink>
           </li>
           <li className="homeNavbar-li-library">
-            <NavLink to="/library">Library</NavLink>
+            <NavLink to="/home/library">Library</NavLink>
           </li>
         </ul>
 

@@ -19,7 +19,7 @@ const About = () => {
             <li>Storing songs data in list</li>
           </ul>
         </div>
-          <p>®Student template</p>
+          <p>®Student template, help from Phind and ChatGPT</p>
       </div>
     </div>
   );

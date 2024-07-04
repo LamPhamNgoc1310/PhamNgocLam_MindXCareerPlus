@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import Songs from "../../assets/data/SONGS_DATA";
+import Songs from "../../../public/data/SONGS_DATA";
 // import React, { useState, useRef } from "react";
 import "./MusicPlayer.css";
 
@@ -11,16 +11,14 @@ const MusicPlayer = () => {
   const audioRef = useRef(null);
   const playPause = () => {
     const audioElement = audioRef.current;
-    console.log(audioElement);
-    console.log("Attempting to play");
-    if (!isPlaying && audioElement.readyState >= 1) {
-      audioElement.play().catch(error => console.error("Failed to play audio:", error));
-      setIsPlaying(true);
+    setIsPlaying(!isPlaying);
+    if (isPlaying == true) {
+      audioElement
+        .play()
+        .catch((error) => console.error("Failed to play audio:", error));
       console.log("is playing");
-    } else if (isPlaying) {
+    } else {
       audioElement.pause();
-      setIsPlaying(false);
-      console.log("is not playing");
     }
     console.log(isPlaying);
   };
@@ -38,12 +36,14 @@ const MusicPlayer = () => {
   // console.log(Songs);
   return (
     <div className="musicPlayer">
-      <div className="musicPlayer-song"></div>
+      <div className="musicPlayer-song">{Songs[currentSongIndex].title}</div>
+
+      <div className="musicPlayer-player"></div>
       <button onClick={playPause}>Play/Pause</button>
       <button onClick={nextSong}>Next Song</button>
       <button onClick={prevSong}>Previous Song</button>
-      <div className="musicPlayer-player"></div>
-      <audio src={Songs[currentSongIndex].path} ref={audioRef} preload="metadata" onClick={console.log(Songs[currentSongIndex].path)}/>
+      <audio  src={process.env.PUBLIC_URL + Songs[currentSongIndex].path} ref={audioRef} />
+
       <div className="musicPlayer-volume">
         <input
           type="range"
@@ -53,7 +53,7 @@ const MusicPlayer = () => {
           onChange={(e) => {
             const newVolumeLevel = e.target.value;
             setVolumeLevel(newVolumeLevel);
-            audioRef.current.volume = newVolumeLevel/100;
+            audioRef.current.volume = newVolumeLevel / 100;
             console.log(audioRef.current.volume);
           }}
         />

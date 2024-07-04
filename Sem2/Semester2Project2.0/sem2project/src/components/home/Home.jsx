@@ -1,14 +1,11 @@
-import HomeNavBar from "../layout/HomeNavBar"
-import MusicPlayer from "../layout/MusicPlayer"
 
 
 const Home = () => {
   return (
     <div>
-      <HomeNavBar/>   
-      <MusicPlayer/> 
+      Home content
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

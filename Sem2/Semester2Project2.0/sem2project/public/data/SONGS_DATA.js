@@ -1,16 +1,15 @@
-const BASE_URL = "../../assets/songs-audio/";
-
+// const BASE_URL = "../../../public/songs-audio";
 /**
  * @effect generate a unique song path for each song.
  */
-function getSongPath(songTitle) {
-  const formattedTitle = songTitle.toLowerCase().trim().replace(/\s+/g, "-");
+// function getSongPath(songTitle) {
+//   const formattedTitle = songTitle.toLowerCase().trim().replace(/\s+/g, "-");
 
-  const path = `${BASE_URL}${formattedTitle}.mp3`;
+//   const path = `${BASE_URL}${formattedTitle}.mp3`;
 
-  console.log(path);
-  return path;
-}
+//   console.log(path);
+//   return path;
+// }
 
 /**
  * @effect initialize an array named "Songs"
@@ -49,14 +48,14 @@ Songs = Songs.map((song) => ({
   cover: "https://picsum.photos/200",
 }));
 
-/**
- * @effect adding 'path' attribute to each song
- */
+// /**
+//  * @effect adding 'path' attribute to each song
+//  */
 
-Songs = Songs.map((song) => ({
-  ...song,
-  path: getSongPath(song.title),
-}));
+// Songs = Songs.map((song) => ({
+//   ...song,
+//   path: getSongPath(song.title),
+// }));
 
 console.log(Songs);
 export default Songs;
