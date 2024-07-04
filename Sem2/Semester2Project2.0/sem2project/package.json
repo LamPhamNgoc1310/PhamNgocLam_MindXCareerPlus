@@ -12,6 +12,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-h5-audio-player": "^3.9.3",
     "react-router": "^6.23.1",
     "react-router-dom": "^6.23.1"
   },

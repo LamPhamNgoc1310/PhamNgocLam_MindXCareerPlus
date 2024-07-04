@@ -15,7 +15,9 @@ export default function NavBar() {
       </div>
       <ul className="navbar-ul">
         <li className="navbar-li">
-          <NavLink activeClassName="navbar-li-navlink-active" to="/home">Home</NavLink>
+          <NavLink activeClassName="navbar-li-navlink-active" to="/home">
+            Home
+          </NavLink>
         </li>
         <li className="navbar-li">
           <NavLink to="/about">About</NavLink>
