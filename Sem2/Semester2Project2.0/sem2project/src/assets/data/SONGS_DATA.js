@@ -1,25 +1,4 @@
-// const BASE_URL = "../../../public/songs-audio";
-/**
- * @effect generate a unique song path for each song.
- */
-// function getSongPath(songTitle) {
-//   const formattedTitle = songTitle.toLowerCase().trim().replace(/\s+/g, "-");
 
-//   const path = `${BASE_URL}${formattedTitle}.mp3`;
-
-//   console.log(path);
-//   return path;
-// }
-
-/**
- * @effect initialize an array named "Songs"
- * @abstract a song object have this kind of structure:
- * {
- *  id: int,
- *  title: string,
- *  artist: list,
- * }
- */
 let Songs = [
   {
     id: 0,

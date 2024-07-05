@@ -6,7 +6,17 @@ import next from "../../assets/next.png";
 import pause from "../../assets/pause.png";
 import play from "../../assets/play.png";
 
-const MusicPlayer = () => {
+const MusicPlayer = ({ selectedSong }) => {
+  useEffect(() => {
+    if (selectedSong) {
+      const songIndex = Songs.findIndex((song) => song.id === selectedSong.id);
+      if (songIndex !== -1) {
+        setCurrentSongIndex(songIndex);
+        playPause(); // Play the selected song immediately
+      }
+    }
+  }, [selectedSong]);
+
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volumeLevel, setVolumeLevel] = useState(50);

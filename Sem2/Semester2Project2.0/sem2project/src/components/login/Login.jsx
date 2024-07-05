@@ -12,8 +12,8 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Simulate successful login
-    setCurrentUser({ id: 1, email: formData.email }); // Mock user data
+
+    setCurrentUser({ email: formData.email }); 
   };
 
   return (
@@ -48,7 +48,7 @@ const Login = () => {
         </div>
 
         <div className="button-section">
-          <button type="submit" className="form-redirect-btn">
+          <button type="submit" className="form-redirect-btn" onClick={setCurrentUser(true)}>
             <NavLink to="/home">Submit</NavLink>
           </button>
         </div>

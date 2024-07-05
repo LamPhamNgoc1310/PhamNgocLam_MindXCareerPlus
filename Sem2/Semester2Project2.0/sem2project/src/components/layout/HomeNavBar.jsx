@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-
 import "./HomeNavBar.css";
 import NavLogo from "./Logo/NavLogo";
 import { useAuth } from "../../context/authContext";
@@ -65,7 +64,7 @@ const HomeNavBar = () => {
             <NavLink to="/home">Home</NavLink>
           </li>
           <li className="homeNavbar-li-library">
-            <NavLink to="/home/library">Library</NavLink>
+            <NavLink to="/home/libraryy">Library</NavLink>
           </li>
         </ul>
         {currentUser && (

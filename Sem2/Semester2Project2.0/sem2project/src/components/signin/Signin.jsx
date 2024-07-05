@@ -50,7 +50,7 @@ const Signin = () => {
 
         <div className="button-section">
           <button type="submit" className="form-redirect-btn">
-            <NavLink to="/home">Submit</NavLink>
+            <NavLink to="/">Submit</NavLink>
           </button>
           <button type="submit" className="form-login-btn">
             <NavLink to="/login">Already had an account?</NavLink>
