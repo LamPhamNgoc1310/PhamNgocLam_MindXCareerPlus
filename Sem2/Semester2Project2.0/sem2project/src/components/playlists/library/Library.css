@@ -1,56 +1,55 @@
 /* Library.css */
 
 .library {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #76C356;
-    border-radius: 8px;
-    background-color: black;
-    color: #76C356;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .library-header {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #76C356;
-  }
-  
-  .library-body {
-    width: 100%;
-    overflow-x: auto;
-  }
-  
-  .library-body table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .library-body th,
-  .library-body td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #76C356;
-    color: #76C356;
-  }
-  
-  .library-body th {
-    background-color: #333;
-    font-weight: bold;
-  }
-  
-  .library-body tr:nth-child(even) {
-    background-color: #222;
-  }
-  
-  .library-body tr:nth-child(odd) {
-    background-color: #000;
-  }
-  
-  .library-body tr:hover {
-    background-color: #444;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #76c356;
+  border-radius: 8px;
+  background-color: black;
+  color: #76c356;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.library-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #76c356;
+}
+
+.library-body {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.library-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.library-body th,
+.library-body td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #76c356;
+  color: #76c356;
+}
+
+.library-body th {
+  background-color: #333;
+  font-weight: bold;
+}
+
+.library-body tr:nth-child(even) {
+  background-color: #222;
+}
+
+.library-body tr:nth-child(odd) {
+  background-color: #000;
+}
+
+.library-body tr:hover {
+  background-color: #444;
+}
