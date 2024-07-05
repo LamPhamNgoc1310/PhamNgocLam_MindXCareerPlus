@@ -4,13 +4,18 @@ import { useAuth } from '../../context/authContext';
 import "./Login.css";
 
 const Login = () => {
-  const { setCurrentUser } = useAuth(); 
+  const { setCurrentUser, formData, setFormData } = useAuth();
+
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    setCurrentUser({ id: 1, email: 'admin@admin.com', password: '123' });
+    // Simulate successful login
+    setCurrentUser({ id: 1, email: formData.email }); // Mock user data
   };
+
   return (
     <div className="signin">
       <NavLogo />
@@ -22,8 +27,11 @@ const Login = () => {
             type="email"
             className="form-control"
             id="exampleInputEmail1"
+            name="email"
             aria-describedby="emailHelp"
             placeholder="Enter email"
+            value={formData.email}
+            onChange={handleChange}
           />
         </div>
         <div className="form-group">
@@ -32,10 +40,12 @@ const Login = () => {
             type="password"
             className="form-control"
             id="exampleInputPassword1"
+            name="password"
             placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
           />
         </div>
-
 
         <div className="button-section">
           <button type="submit" className="form-redirect-btn">

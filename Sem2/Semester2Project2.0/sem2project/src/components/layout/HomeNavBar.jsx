@@ -9,7 +9,7 @@ const HomeNavBar = () => {
   const { currentUser } = useAuth();
   const [input, setInput] = useState("");
   const [showConfirm, setShowConfirm] = useState(false);
-  //   taken from to do list app
+  
   const [itemList, setItemList] = useState([
     {
       id: 1,
@@ -18,13 +18,13 @@ const HomeNavBar = () => {
       songs: [],
     },
   ]);
+
   function addPlaylist() {
     if (!input) {
       alert("Please enter something in the box");
       return;
     }
-    const newItemId =
-      itemList.length > 0 ? itemList[itemList.length - 1].id + 1 : 1;
+    const newItemId = itemList.length > 0 ? itemList[itemList.length - 1].id + 1 : 1;
     const item = {
       id: newItemId,
       path: `/playlist${newItemId}`,
@@ -34,7 +34,6 @@ const HomeNavBar = () => {
 
     setItemList((itemList) => [...itemList, item]);
     setInput("");
-    console.log(itemList);
   }
 
   const handleCreatePlaylist = () => {
@@ -48,7 +47,6 @@ const HomeNavBar = () => {
     addPlaylist();
   };
 
-  // handling confirmation and cancellation
   const handleConfirm = () => {
     handleCreatePlaylist();
     setShowConfirm(false);
@@ -62,7 +60,6 @@ const HomeNavBar = () => {
     <div>
       <div className="homeNavbar">
         <NavLogo />
-
         <ul className="homeNavbar-ul">
           <li className="homeNavbar-li-homeLink">
             <NavLink to="/home">Home</NavLink>
@@ -91,8 +88,6 @@ const HomeNavBar = () => {
             </ul>
           </>
         )}
-
-        {/* only displayed if clicked on Create playlist */}
         {showConfirm && (
           <div className="confirm-dialog">
             <p>Enter playlist name</p>
