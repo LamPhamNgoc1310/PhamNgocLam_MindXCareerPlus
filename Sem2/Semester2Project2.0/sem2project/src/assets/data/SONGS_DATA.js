@@ -24,7 +24,7 @@ let Songs = [
   {
     id: 0,
     title: "Đợi ft Wean",
-    artist: ["52Hz"],
+    artist: ["52Hz", "Wean"],
     path: "songs-audio/doi-ft-wean.mp3"
   },
   {

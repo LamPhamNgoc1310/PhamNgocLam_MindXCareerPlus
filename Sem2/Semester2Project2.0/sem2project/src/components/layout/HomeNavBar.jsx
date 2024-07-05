@@ -1,10 +1,12 @@
-import "./HomeNavBar.jsx";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import logo from "/Users/lampham_1310/Programming/VSCode/XCareer/PhamNgocLam_MindXCareerPlus/Sem2/Semester2Project2.0/sem2project/src/assets/cate2.png";
-import "./HomeNavBar.css"
+
+import "./HomeNavBar.css";
+import NavLogo from "./Logo/NavLogo";
+import { useAuth } from "../../context/authContext";
 
 const HomeNavBar = () => {
+  const { currentUser } = useAuth();
   const [input, setInput] = useState("");
   const [showConfirm, setShowConfirm] = useState(false);
   //   taken from to do list app
@@ -59,16 +61,7 @@ const HomeNavBar = () => {
   return (
     <div>
       <div className="homeNavbar">
-        <div className="navbar-logo">
-          <NavLink to="/" className="navbar-logo-link">
-            <img
-              className="navbar-logo-img"
-              src={logo}
-              alt="nah man img aint available rn"
-            />
-            <div className="navbar-logo-text">Catify</div>
-          </NavLink>
-        </div>
+        <NavLogo />
 
         <ul className="homeNavbar-ul">
           <li className="homeNavbar-li-homeLink">
@@ -78,18 +71,31 @@ const HomeNavBar = () => {
             <NavLink to="/home/library">Library</NavLink>
           </li>
         </ul>
-
-        <button
-          className="homeNavbar-createPlaylistBtn"
-          onClick={() => setShowConfirm(true)}
-        >
-          Create Playlist
-        </button>
+        {currentUser && (
+          <>
+            <button
+              className="homeNavbar-createPlaylistBtn"
+              onClick={() => setShowConfirm(true)}
+            >
+              Create Playlist
+            </button>
+            <hr />
+            <ul className="homeNavbar-ul-playlists">
+              {itemList.map((item) => {
+                return (
+                  <li className="homeNavbar-li-playlist" key={item.id}>
+                    <NavLink to={item.path}>{item.title}</NavLink>
+                  </li>
+                );
+              })}
+            </ul>
+          </>
+        )}
 
         {/* only displayed if clicked on Create playlist */}
         {showConfirm && (
           <div className="confirm-dialog">
-            <p>Enter playlist name:</p>
+            <p>Enter playlist name</p>
             <input
               type="text"
               value={input}
@@ -99,19 +105,6 @@ const HomeNavBar = () => {
             <button onClick={handleCancel}>Cancel</button>
           </div>
         )}
-
-        <ul className="homeNavbar-ul-playlists">
-          {itemList.map((item) => {
-            return (
-              <li className="homeNavbar-li-playlist" key={item.id}>
-                <NavLink to={item.path}>
-                  <img src={item.img} alt="" />
-                  <div>{item.title}</div>
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
       </div>
     </div>
   );

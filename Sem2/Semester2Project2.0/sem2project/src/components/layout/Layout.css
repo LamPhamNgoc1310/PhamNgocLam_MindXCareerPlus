@@ -6,7 +6,7 @@
 
 .layout {
   display: grid;
-  grid-template-rows: auto 10vh;
+  grid-template-rows: auto 15vh;
   grid-template-columns: 15vw 85vw;
   grid-template-areas:
     "homeNavBar outlet"
@@ -16,6 +16,7 @@
   position: relative;
   gap: 5px;
   overflow-x: hidden;
+  color: #76c356;
 }
 
 .homeNavBar {
@@ -25,6 +26,7 @@
   height: 100vh;
   grid-area: homeNavBar;
   background-color: black;
+  color: #76c356;
 }
 
 .outlet {
@@ -42,4 +44,5 @@
   display: flex;
   align-items: flex-end;
   width: 100%;
+  color: #76c356;
 }

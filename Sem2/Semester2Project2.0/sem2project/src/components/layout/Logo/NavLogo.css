@@ -1,0 +1,36 @@
+.navbar-logo {
+  display: flex;
+  background-color: black;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.navbar-logo a {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+
+.navbar-logo-text{
+    color: #76c356;
+    text-decoration: none;
+}
+
+.navbar-logo-img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 35px;
+}
+
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
+  border-radius: 20px;
+  padding-right: 5px ;
+}

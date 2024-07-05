@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1em;
+}
+
+.signin {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  background-image: linear-gradient(rgb(94, 94, 94), #76c356);
+}
+
+.form-container {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-login-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.form-login-btn a,
+.form-redirect-btn a {
+  color: black;
+}
+
+.form-redirect-btn {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1px;
+}

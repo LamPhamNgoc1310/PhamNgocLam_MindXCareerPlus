@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.landing-banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: -80px;
+}
+
+.landing-banner img {
+  width: 100%;
+  height: 93%;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  z-index: -1;
+}
+
+.banner-text {
+  font-family: fantasy;
+  margin-bottom: 12%;
+  z-index: 1;
+  color: white;
+  font-size: 7em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-btn {
+  position: absolute;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+  animation-name: popping;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes popping {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
+
+.banner-btn:hover {
+  transform: scale(1.3);
+}
+
+.banner-btn a {
+  font-family: fantasy;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.landing-footer {
+    width: 100%;
+  color: white;
+  position: absolute;
+    margin-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  background-color: black;
+}
