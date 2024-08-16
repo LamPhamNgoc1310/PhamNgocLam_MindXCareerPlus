@@ -1,15 +1,8 @@
-/* must be asked */
-/* *{
-    background-color: orange;
-} */
+
 body {
     background-image: url(./assets/landing-cat-bg.gif);
 }
-/* FIRST CONTAINER */
-/* .container {
-    position: absolute;
-    z-index: -10px;
-} */
+
 .nav-bar {
     display: flex;
     gap: 600px;

@@ -1,0 +1,2 @@
+- using bcrypt, we can hash a password
+- first, you have to install bcrypt: npm i bcrypt.

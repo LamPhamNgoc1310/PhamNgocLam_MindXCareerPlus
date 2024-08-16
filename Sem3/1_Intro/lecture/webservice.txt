@@ -1,0 +1,6 @@
+MERN:
+- Consists of 4 package managers
+ + MongoDB
+ + ExpressJS
+ + ReactJS
+ + NodeJS
