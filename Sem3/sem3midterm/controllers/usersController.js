@@ -66,8 +66,15 @@ const usersController = {
     }
   },
 
+  
   logout: async (req, res) => {
-    res.status(200).send(req.params.id + "logged out.");
+    const userId = req.params.id;
+    try {
+      const user = await userModel.findById(userId);
+      res.status(200).send(user.name + " logged out.");
+    } catch (error) {
+      res.status(500).send(`An error occured: ${error}`);
+    }
   },
 };
 
