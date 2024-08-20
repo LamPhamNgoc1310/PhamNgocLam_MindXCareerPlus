@@ -18,5 +18,4 @@ app.use('/users', userRouter);
 
 app.listen(8080, () => {
     console.log("Running at port 8080");
-    
 })
