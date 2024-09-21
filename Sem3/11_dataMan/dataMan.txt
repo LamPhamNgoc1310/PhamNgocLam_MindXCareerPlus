@@ -1,0 +1,11 @@
+> Paging in server allows the server to be more optimized and be less "tired".
+ - e.g: the server has 100 results, and each time the user click at 1 page, they only return 10 results at a time.
+ - paging logics:
+  + totalItems
+  + pageSizes
+  + totalPages
+  + skip
+  + sort
+
+** Note **
+prac in lec 7

@@ -1,0 +1,6 @@
+- How to deploy our project?
+ + Use postman, you are going to add an environment
+ with the following variables:
+ PORT, CONNECT_STRING (from mongodb), AT_SECRETKEY, RT_SECRETKEY
+ + "npm install" to download all the packages of the project (if you're not a contributor)
+ + use Render (a cloud service)

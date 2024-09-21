@@ -11,4 +11,5 @@ userRouter.put('/:id', userController.updateUser);
 userRouter.delete('/:id', userController.deleteUser);
 userRouter.post('/register', userController.register);
 userRouter.post('/login', userController.login);
+userRouter.get('/paging_filter', userController.pagingFilter)
 export default userRouter;

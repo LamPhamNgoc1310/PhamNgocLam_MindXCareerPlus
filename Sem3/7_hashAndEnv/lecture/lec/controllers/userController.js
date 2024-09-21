@@ -66,6 +66,17 @@ const userController = {
                 })
             }
         }
+    },
+    pagingFilter: async (req, res) => {
+        let {pageIndex, pageSize} = req.query; // users can change index and size
+        let totalItems = await userModel.countDocuments(); // count the total of items in the db according to a given schema
+        let totalPage = Math.ceil(totalItems/pageSize); // total pages
+        let data = await userModel.find().skip((pageIndex - 1)*pageSize).limit(pageSize) // skip() can skip the viewed elements, e.g: page 1 has 20 ele, when move to page 2, you will skip 20 previous elements
+        res.status(200).send(JSON.stringify({
+            totalItems,
+            totalPage,
+            data
+        }))
     }
 }
 
